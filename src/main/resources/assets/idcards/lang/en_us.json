@@ -1,4 +1,8 @@
 {
   "item.idcards.idcard": "ID Card",
-  "creativetab.idcards_tab": "ID Cards"
+  "creativetab.idcards_tab": "ID Cards",
+  "item.idcards.idcard.tooltip.base": "A useful item",
+  "item.idcards.idcard.tooltip.owner": "Owner: %s",
+  "item.idcards.idcard.actionBarMessageLinked": "Owner set to %s",
+  "item.idcards.idcard.actionBarMessageUnlinked": "Owner cleared"
 }

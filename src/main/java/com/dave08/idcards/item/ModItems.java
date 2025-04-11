@@ -1,6 +1,7 @@
 package com.dave08.idcards.item;
 
 import com.dave08.idcards.IDCards;
+import com.dave08.idcards.item.custom.idcardItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -12,7 +13,7 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, IDCards.MOD_ID);
 
     public static final RegistryObject<Item> IDCARD = ITEMS.register("idcard",
-            () -> new Item(new Item.Properties()));
+            () -> new idcardItem(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
