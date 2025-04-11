@@ -1,6 +1,9 @@
 package com.dave08.idcards;
 
+import com.dave08.idcards.item.ModItems;
+import com.dave08.idcards.item.ModTabs;
 import com.mojang.logging.LogUtils;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -27,6 +30,9 @@ public class IDCards
     {
         IEventBus modEventBus = context.getModEventBus();
 
+        ModTabs.register(modEventBus);
+        ModItems.register(modEventBus);
+
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
@@ -48,7 +54,10 @@ public class IDCards
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-
+        /*if(event.getTabKey() == CreativeModeTabs.INGREDIENTS)
+        {
+            event.accept(ModItems.IDCARD);
+        }/**/
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
