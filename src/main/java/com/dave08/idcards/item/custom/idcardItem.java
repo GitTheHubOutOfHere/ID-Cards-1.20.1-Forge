@@ -38,7 +38,7 @@ public class idcardItem extends Item
             if (!storedUuid.equals(pPlayer.getUUID()))
             {
                 if (!pLevel.isClientSide) {
-                    pPlayer.displayClientMessage(Component.translatable("item.idcards.idcard.actionBarMessageNotOwner")
+                    pPlayer.displayClientMessage(Component.translatable("item.idcards.idcard.actionBarMessage.NotOwner")
                             .withStyle(ChatFormatting.RED), true);
                 }
                 return InteractionResultHolder.sidedSuccess(stack, pLevel.isClientSide);
@@ -48,7 +48,7 @@ public class idcardItem extends Item
             if (!pPlayer.isCrouching())
             {
                 if (!pLevel.isClientSide) {
-                    pPlayer.displayClientMessage(Component.translatable("item.idcards.idcard.actionBarMessageAlreadyLinked")
+                    pPlayer.displayClientMessage(Component.translatable("item.idcards.idcard.actionBarMessage.AlreadyLinked")
                             .withStyle(ChatFormatting.WHITE), true);
                 }
                 return InteractionResultHolder.sidedSuccess(stack, pLevel.isClientSide);
@@ -57,7 +57,7 @@ public class idcardItem extends Item
             // Player is the owner — clear the data
             stack.setTag(null); // or stack.removeTagKey("OwnerUUID"); + remove other keys individually
             if (!pLevel.isClientSide) {
-                pPlayer.displayClientMessage(Component.translatable("item.idcards.idcard.actionBarMessageUnlinked")
+                pPlayer.displayClientMessage(Component.translatable("item.idcards.idcard.actionBarMessage.Unlinked")
                         .withStyle(ChatFormatting.RED), true);
             }
             return InteractionResultHolder.sidedSuccess(stack, pLevel.isClientSide);
@@ -70,7 +70,7 @@ public class idcardItem extends Item
 
         if (!pLevel.isClientSide())
         {
-            pPlayer.displayClientMessage(Component.translatable("item.idcards.idcard.actionBarMessageLinked",
+            pPlayer.displayClientMessage(Component.translatable("item.idcards.idcard.actionBarMessage.Linked",
                     pPlayer.getName().getString()).withStyle(ChatFormatting.GREEN), true);
         }
 

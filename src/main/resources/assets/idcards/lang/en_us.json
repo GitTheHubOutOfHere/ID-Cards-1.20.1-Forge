@@ -6,7 +6,8 @@
   "item.idcards.idcard.tooltip.base2": "Right-click to take ownership of it",
   "item.idcards.idcard.tooltip.base3": "Right-click + Shift to clear ownership",
   "item.idcards.idcard.tooltip.owner": "Owner: %s",
-  "item.idcards.idcard.actionBarMessageLinked": "Owner set to %s",
-  "item.idcards.idcard.actionBarMessageUnlinked": "Owner cleared",
-  "item.idcards.idcard.actionBarMessageAlreadyLinked": "This ID Card is already linked, press shift and right-click it to clear its ownership"
+  "item.idcards.idcard.actionBarMessage.Linked": "Owner set to %s",
+  "item.idcards.idcard.actionBarMessage.Unlinked": "Owner cleared",
+  "item.idcards.idcard.actionBarMessage.AlreadyLinked": "This ID Card is already linked, press shift and right-click it to clear its ownership",
+  "item.idcards.idcard.actionBarMessage.NotOwner": "You are not the owner of this ID Card and cannot clear its ownership"
 }
