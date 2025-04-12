@@ -17,7 +17,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        //simpleItem(ModItems.SAPPHIRE);
+        simpleItem(ModItems.IDCARD);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
