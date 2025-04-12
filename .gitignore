@@ -2,19 +2,11 @@
 /.gradle/
 /build/
 /build/classes/java/main/
-/run/logs/2025-04-11-1.log.gz
-/run/logs/2025-04-11-2.log.gz
-/run/logs/2025-04-11-3.log.gz
-/run/logs/2025-04-11-4.log.gz
-/run/logs/2025-04-11-5.log.gz
-/run/logs/2025-04-11-6.log.gz
-/run/logs/2025-04-11-7.log.gz
-/run/logs/2025-04-11-8.log.gz
-/run/logs/2025-04-11-9.log.gz
-/run/logs/2025-04-11-10.log.gz
-/run/logs/debug-1.log.gz
-/run/logs/debug-2.log.gz
-/run/logs/debug-3.log.gz
-/run/logs/debug-4.log.gz
-/run/logs/debug-5.log.gz
-/run/saves/A whokle new world/poi/r.-1.-1.mca
+#/run/logs/
+#/run/saves/
+/src/generated/
+/run-data/
+/run/
+
+# Not the latest build
+!/build/libs
