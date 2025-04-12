@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dce26f5-3f00-42ae-8838-0b49df3a4bac" name="Changes" comment="Added controls for item 'idcard' and included all files in github repo" />
+    <list default="true" id="7dce26f5-3f00-42ae-8838-0b49df3a4bac" name="Changes" comment="Consistency patch">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -103,7 +105,7 @@
     "settings.editor.selected.configurable": "preferences.sourceCode.Java"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.ID Cards 1.20.1 Forge [runClient]">
+  <component name="RunManager" selected="Gradle.ID Cards 1.20.1 Forge [build]">
     <configuration name="ID Cards 1.20.1 Forge [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -172,8 +174,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ID Cards 1.20.1 Forge [runClient]" />
         <item itemvalue="Gradle.ID Cards 1.20.1 Forge [build]" />
+        <item itemvalue="Gradle.ID Cards 1.20.1 Forge [runClient]" />
         <item itemvalue="Gradle.ID Cards 1.20.1 Forge [clean]" />
       </list>
     </recent_temporary>
@@ -235,7 +237,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744435457695</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Consistency patch">
+      <option name="closed" value="true" />
+      <created>1744436235019</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1744436235019</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -243,6 +253,7 @@
     <MESSAGE value="Added functionality to 'idcard' item" />
     <MESSAGE value="Finalised item property datagen" />
     <MESSAGE value="Added controls for item 'idcard' and included all files in github repo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added controls for item 'idcard' and included all files in github repo" />
+    <MESSAGE value="Consistency patch" />
+    <option name="LAST_COMMIT_MESSAGE" value="Consistency patch" />
   </component>
 </project>
