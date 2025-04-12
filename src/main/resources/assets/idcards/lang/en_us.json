@@ -1,8 +1,12 @@
 {
-  "item.idcards.idcard": "ID Card",
   "creativetab.idcards_tab": "ID Cards",
-  "item.idcards.idcard.tooltip.base": "A useful item",
+
+  "item.idcards.idcard": "ID Card",
+  "item.idcards.idcard.tooltip.base1": "Used to identify people",
+  "item.idcards.idcard.tooltip.base2": "Right-click to take ownership of it",
+  "item.idcards.idcard.tooltip.base3": "Right-click + Shift to clear ownership",
   "item.idcards.idcard.tooltip.owner": "Owner: %s",
   "item.idcards.idcard.actionBarMessageLinked": "Owner set to %s",
-  "item.idcards.idcard.actionBarMessageUnlinked": "Owner cleared"
+  "item.idcards.idcard.actionBarMessageUnlinked": "Owner cleared",
+  "item.idcards.idcard.actionBarMessageAlreadyLinked": "This ID Card is already linked, press shift and right-click it to clear its ownership"
 }
