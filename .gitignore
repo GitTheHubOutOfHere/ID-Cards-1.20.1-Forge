@@ -1,1 +1,4 @@
 /run/logs/
+/build/_atJar_4/
+/build/tmp/
+/run/crash-reports/
