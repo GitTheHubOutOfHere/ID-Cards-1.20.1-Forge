@@ -30,6 +30,8 @@ public class IDCardReaderMenu extends AbstractContainerMenu {
             for (int j = 0; j < 9; ++j) {
                 int index = j + i * 9;
                 this.addSlot(new Slot(container, index, 8 + j * 18, 18 + i * 18) {
+                    private boolean initialized = false;
+
                     @Override
                     public boolean mayPlace(ItemStack stack) {
                         return stack.getItem().getDescriptionId().equals("item.idcards.idcard") &&
@@ -38,15 +40,13 @@ public class IDCardReaderMenu extends AbstractContainerMenu {
                     }
 
                     @Override
-                    public void set(ItemStack stack) {
-                        super.set(stack);
-                        blockEntity.updateUUIDList(container);
-                    }
-
-                    @Override
-                    public void onTake(Player player, ItemStack stack) {
-                        super.onTake(player, stack);
-                        blockEntity.updateUUIDList(container);
+                    public void setChanged() {
+                        super.setChanged();
+                        if (initialized) {
+                            be.updateUUIDList(container);
+                        } else {
+                            initialized = true; // Skip the first call
+                        }
                     }
                 });
             }

@@ -4,28 +4,57 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dce26f5-3f00-42ae-8838-0b49df3a4bac" name="Changes" comment="Added full functionality to id-card-reader block">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2025-04-12-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2025-04-12-10.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2025-04-12-10.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2025-04-12-11.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2025-04-12-11.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2025-04-12-12.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2025-04-12-12.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2025-04-12-13.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2025-04-12-13.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2025-04-12-14.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2025-04-12-14.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2025-04-12-15.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2025-04-12-15.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2025-04-12-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2025-04-12-2.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2025-04-12-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2025-04-12-3.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2025-04-12-4.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2025-04-12-4.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2025-04-12-5.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2025-04-12-5.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2025-04-12-7.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2025-04-12-7.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2025-04-12-8.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2025-04-12-8.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2025-04-12-9.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2025-04-12-9.log.gz" afterDir="false" />
+    <list default="true" id="7dce26f5-3f00-42ae-8838-0b49df3a4bac" name="Changes" comment="Consistency patch">
+      <change beforePath="$PROJECT_DIR$/.gradle/8.8/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.8/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.8/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.8/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/block/custom/IdcardReaderBlock.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/block/custom/IdcardReaderBlock.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/block/entity/IdcardReaderBlockEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/block/entity/IdcardReaderBlockEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/block/entity/menu/IDCardReaderMenu$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/block/entity/menu/IDCardReaderMenu$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/block/entity/menu/IDCardReaderMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/block/entity/menu/IDCardReaderMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classpath/runClient_minecraftClasspath.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/classpath/runClient_minecraftClasspath.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/idcards-0.1.0-1.20.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/idcards-0.1.0-1.20.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reobfJar/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/reobfJar/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reobfJar/output.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/reobfJar/output.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-1.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-2.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-3.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-4.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-4.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-5.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-5.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/latest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/A whokle new world/DIM-1/data/raids.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/A whokle new world/DIM-1/data/raids.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/A whokle new world/DIM1/data/raids_end.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/A whokle new world/DIM1/data/raids_end.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/A whokle new world/data/raids.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/A whokle new world/data/raids.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/A whokle new world/data/random_sequences.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/A whokle new world/data/random_sequences.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/A whokle new world/entities/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/A whokle new world/entities/r.-1.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/A whokle new world/entities/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/A whokle new world/entities/r.-1.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/A whokle new world/entities/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/A whokle new world/entities/r.0.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/A whokle new world/entities/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/A whokle new world/entities/r.0.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/A whokle new world/level.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/A whokle new world/level.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/A whokle new world/level.dat_old" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/A whokle new world/level.dat_old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/A whokle new world/playerdata/380df991-f603-344c-a090-369bad2a924a.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/A whokle new world/playerdata/380df991-f603-344c-a090-369bad2a924a.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/A whokle new world/playerdata/380df991-f603-344c-a090-369bad2a924a.dat_old" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/A whokle new world/playerdata/380df991-f603-344c-a090-369bad2a924a.dat_old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/A whokle new world/region/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/A whokle new world/region/r.-1.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/A whokle new world/region/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/A whokle new world/region/r.-1.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/A whokle new world/region/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/A whokle new world/region/r.0.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/A whokle new world/region/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/A whokle new world/region/r.0.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/A whokle new world/session.lock" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/A whokle new world/session.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/A whokle new world/stats/380df991-f603-344c-a090-369bad2a924a.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/A whokle new world/stats/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/usercache.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/usercache.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/block/custom/IdcardReaderBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/block/custom/IdcardReaderBlock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/block/entity/IdcardReaderBlockEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/block/entity/IdcardReaderBlockEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/block/entity/menu/IDCardReaderMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/block/entity/menu/IDCardReaderMenu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,22 +77,22 @@
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="ID-Cards-1.20.1-Forge" type="f1a62948:ProjectNode" />
+                <item name="ID Cards 1.20.1 Forge" type="f1a62948:ProjectNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="ID-Cards-1.20.1-Forge" type="f1a62948:ProjectNode" />
+                <item name="ID Cards 1.20.1 Forge" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="ID-Cards-1.20.1-Forge" type="f1a62948:ProjectNode" />
+                <item name="ID Cards 1.20.1 Forge" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="build" type="c8890929:TasksNode$1" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="ID-Cards-1.20.1-Forge" type="f1a62948:ProjectNode" />
+                <item name="ID Cards 1.20.1 Forge" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="forgegradle runs" type="c8890929:TasksNode$1" />
               </path>
@@ -96,7 +125,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/GitTheHubOutOfHere/ID-Cards-1.20.1-Forge.git&quot;,
-    &quot;accountId&quot;: &quot;1e44c843-b71a-402a-8dbe-002ebb1c4aaa&quot;
+    &quot;accountId&quot;: &quot;2d95c2a2-b779-4967-a228-7a730c654085&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -107,37 +136,24 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.Build ID Cards 1.20.1 Forge.executor": "Run",
-    "Gradle.Download Sources.executor": "Run",
-    "Gradle.ID Cards 1.20.1 Forge [:cpw.mods.bootstraplauncher.BootstrapLauncher.main()].executor": "Run",
-    "Gradle.ID Cards 1.20.1 Forge [:prepareRunClientCompile].executor": "Run",
-    "Gradle.ID Cards 1.20.1 Forge [build].executor": "Run",
-    "Gradle.ID Cards 1.20.1 Forge [clean].executor": "Run",
-    "Gradle.ID Cards 1.20.1 Forge [runClient].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/David V/Documents/Download/ID-Cards-1.20.1-Forge/src/main/resources/assets/idcards/textures/block",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "Errors"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Build ID Cards 1.20.1 Forge.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ID Cards 1.20.1 Forge [:cpw.mods.bootstraplauncher.BootstrapLauncher.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ID Cards 1.20.1 Forge [:prepareRunClientCompile].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ID Cards 1.20.1 Forge [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ID Cards 1.20.1 Forge [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ID Cards 1.20.1 Forge [runClient].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/David/Documents/ID Cards 1.20.1 Forge&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Java&quot;
   }
-}]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\David V\Documents\Download\ID-Cards-1.20.1-Forge\src\main\resources\assets\idcards\textures\block" />
-      <recent name="C:\Users\David V\Documents\Download\ID-Cards-1.20.1-Forge\src\main\resources\assets\idcards\textures" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\David V\Documents\Download\ID-Cards-1.20.1-Forge\src\main\resources\assets\idcards\textures\gui" />
-    </key>
-  </component>
+}</component>
   <component name="RunManager" selected="Gradle.ID Cards 1.20.1 Forge [runClient]">
     <configuration name="ID Cards 1.20.1 Forge [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -278,20 +294,8 @@
       <option name="project" value="LOCAL" />
       <updated>1744436235019</updated>
     </task>
-    <task id="LOCAL-00008" summary="Added full functionality to id-card-reader block">
-      <option name="closed" value="true" />
-      <created>1745910710950</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1745910710950</updated>
-    </task>
-    <option name="localTasksCounter" value="9" />
+    <option name="localTasksCounter" value="8" />
     <servers />
-  </component>
-  <component name="UnknownFeatures">
-    <option featureType="dependencySupport" implementationName="java:org.spongepowered:mixin" />
-    <option featureType="dependencySupport" implementationName="java:net.minecraftforge:forge" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added non-functional 'idcard' item" />
@@ -299,7 +303,6 @@
     <MESSAGE value="Finalised item property datagen" />
     <MESSAGE value="Added controls for item 'idcard' and included all files in github repo" />
     <MESSAGE value="Consistency patch" />
-    <MESSAGE value="Added full functionality to id-card-reader block" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added full functionality to id-card-reader block" />
+    <option name="LAST_COMMIT_MESSAGE" value="Consistency patch" />
   </component>
 </project>

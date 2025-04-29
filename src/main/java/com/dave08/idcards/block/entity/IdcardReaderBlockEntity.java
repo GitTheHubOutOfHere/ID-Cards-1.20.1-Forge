@@ -34,13 +34,15 @@ public class IdcardReaderBlockEntity extends BlockEntity implements MenuProvider
 
     private final List<UUID> storedUUIDs = new ArrayList<>();
 
+    private UUID owner = new UUID(0L, 0L);
+
     public IdcardReaderBlockEntity(BlockPos pos, BlockState state) {
         super(ModBlockEntities.IDCARD_READER_BE.get(), pos, state);
     }
 
     @Override
     public Component getDisplayName() {
-        return Component.translatable("block.idcards.id_card_reader");
+        return Component.translatable("block.idcards.idcard_reader");
     }
 
     @Override
@@ -71,6 +73,10 @@ public class IdcardReaderBlockEntity extends BlockEntity implements MenuProvider
         return storedUUIDs;
     }
 
+    public UUID getOwner() {return owner;}
+
+    public void setOwner(UUID newOwner) {owner = newOwner;}
+
     @Override
     protected void saveAdditional(CompoundTag tag) {
         super.saveAdditional(tag);
@@ -93,6 +99,7 @@ public class IdcardReaderBlockEntity extends BlockEntity implements MenuProvider
         tag.put("ContainerItems", itemList); // Store it under a custom key "ContainerItems"
 
         //IDCards.LOGGER.info("Stored UUIDs: {}", uuidList); // Debugging log
+        tag.putUUID("Owner", owner);
     }
 
     @Override
@@ -117,5 +124,6 @@ public class IdcardReaderBlockEntity extends BlockEntity implements MenuProvider
         }
 
         //IDCards.LOGGER.info("Loaded UUIDs: {}", uuidList); // Debugging log
+        owner = tag.getUUID("Owner");
     }
 }
