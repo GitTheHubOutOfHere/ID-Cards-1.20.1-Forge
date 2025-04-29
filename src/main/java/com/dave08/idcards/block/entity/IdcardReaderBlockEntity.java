@@ -63,7 +63,7 @@ public class IdcardReaderBlockEntity extends BlockEntity implements MenuProvider
                 }
             }
         }
-        IDCards.LOGGER.info("Stored UUIDs: ", storedUUIDs);
+        //IDCards.LOGGER.info("Stored UUIDs: ", storedUUIDs);
         setChanged();
     }
 
