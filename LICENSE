@@ -1,0 +1,35 @@
+Dave08 ID Cards Project License 1.0
+================================
+
+1. Definitions
+--------------
+
+    1.1 Source
+        The source includes any file located in this
+        respository or the extracted files from any
+        compiled release of this code
+    
+    1.2 Contributor
+        A contributor is any person or entity that is
+        involved in the creation of this source
+
+2. Permissions
+--------------
+
+    2.1 Usage
+        All contributors to this project grant you
+        permission to use any part of code
+        from a file located inside a subfolder of
+        ID-Cards-1.20.1-Forge/src/main/java/com/dave08/idcards/
+    
+    2.2 Modification
+        You may edit the files permitted in 2.1 in any way,
+        as long as it contains no refrences to the
+        ID Cards project or its contributors
+    
+    2.3 Distribution
+        You hereby have full permission to re-distribute
+        any files from this source if it contains no 
+        references to the ID Cards project or its contributors 
+        and your project is not intended for the same
+        purpose as the ID Cards project
