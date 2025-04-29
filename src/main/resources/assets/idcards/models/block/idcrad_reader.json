@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "particle": "block/idcard_reader",
+    "all": "block/idcard_reader"
+  }
+}

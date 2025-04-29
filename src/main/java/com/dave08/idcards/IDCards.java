@@ -1,5 +1,9 @@
 package com.dave08.idcards;
 
+import com.dave08.idcards.block.ModBlocks;
+import com.dave08.idcards.block.entity.ModBlockEntities;
+import com.dave08.idcards.block.entity.menu.ModMenus;
+import com.dave08.idcards.client.screen.ClientModScreens;
 import com.dave08.idcards.item.ModItems;
 import com.dave08.idcards.item.ModTabs;
 import com.mojang.logging.LogUtils;
@@ -15,6 +19,7 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.fml.loading.FMLEnvironment;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -24,14 +29,21 @@ public class IDCards
     // Define mod id in a common place for everything to reference
     public static final String MOD_ID = "idcards";
     // Directly reference a slf4j logger
-    private static final Logger LOGGER = LogUtils.getLogger();
+    public static final Logger LOGGER = LogUtils.getLogger();
 
     public IDCards(FMLJavaModLoadingContext context)
     {
         IEventBus modEventBus = context.getModEventBus();
 
+        if (FMLEnvironment.dist == Dist.CLIENT) {
+            FMLJavaModLoadingContext.get().getModEventBus().addListener(ClientModScreens::register);
+        }
+
         ModTabs.register(modEventBus);
         ModItems.register(modEventBus);
+        ModMenus.register(modEventBus);
+        ModBlocks.register(modEventBus);
+        ModBlockEntities.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);

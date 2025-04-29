@@ -9,5 +9,7 @@
   "item.idcards.idcard.actionBarMessage.Linked": "Owner set to %s",
   "item.idcards.idcard.actionBarMessage.Unlinked": "Owner cleared",
   "item.idcards.idcard.actionBarMessage.AlreadyLinked": "This ID Card is already linked, press shift and right-click it to clear its ownership",
-  "item.idcards.idcard.actionBarMessage.NotOwner": "You are not the owner of this ID Card and cannot clear its ownership"
+  "item.idcards.idcard.actionBarMessage.NotOwner": "You are not the owner of this ID Card and cannot clear its ownership",
+
+  "block.idcards.idcard_reader": "ID Card Reader"
 }

@@ -1,6 +1,7 @@
 package com.dave08.idcards.item;
 
 import com.dave08.idcards.IDCards;
+import com.dave08.idcards.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -21,6 +22,7 @@ public class ModTabs
                     .title(Component.translatable("creativetab.idcards_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.IDCARD.get());
+                        output.accept(ModBlocks.IDCARD_READER.get());
                         //output.accept(Items.DIAMOND); For adding vannilla items
                     }).build());
 

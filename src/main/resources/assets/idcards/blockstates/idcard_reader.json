@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "idcards:block/idcard_reader"
+    }
+  }
+}
