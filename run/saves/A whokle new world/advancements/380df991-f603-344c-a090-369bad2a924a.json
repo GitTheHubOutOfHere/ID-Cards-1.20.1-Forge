@@ -145,12 +145,6 @@
     },
     "done": true
   },
-  "minecraft:recipes/redstone/repeater": {
-    "criteria": {
-      "has_redstone_torch": "2025-04-29 19:05:43 +1000"
-    },
-    "done": true
-  },
   "minecraft:recipes/tools/compass": {
     "criteria": {
       "has_redstone": "2025-04-29 19:05:41 +1000"
@@ -160,6 +154,24 @@
   "minecraft:recipes/redstone/piston": {
     "criteria": {
       "has_redstone": "2025-04-29 19:05:41 +1000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/repeater": {
+    "criteria": {
+      "has_redstone_torch": "2025-04-29 19:05:43 +1000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/charcoal": {
+    "criteria": {
+      "has_log": "2025-04-30 08:33:58 +1000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_planks": {
+    "criteria": {
+      "has_logs": "2025-04-30 08:33:58 +1000"
     },
     "done": true
   },

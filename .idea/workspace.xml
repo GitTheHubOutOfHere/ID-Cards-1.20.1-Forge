@@ -18,14 +18,15 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/block/custom/IdcardReaderBlock.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/block/custom/IdcardReaderBlock.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/block/entity/IdcardReaderBlockEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/block/entity/IdcardReaderBlockEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/block/entity/menu/IDCardReaderMenu$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/block/entity/menu/IDCardReaderMenu$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/block/entity/menu/IDCardReaderMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/block/entity/menu/IDCardReaderMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/item/custom/idcardItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/item/custom/idcardItem.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classpath/runClient_minecraftClasspath.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/classpath/runClient_minecraftClasspath.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/createMcpToSrg/output.tsrg" beforeDir="false" afterPath="$PROJECT_DIR$/build/createMcpToSrg/output.tsrg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/libs/idcards-0.1.0-1.20.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/idcards-0.1.0-1.20.1.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reobfJar/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/reobfJar/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reobfJar/mappings.tsrg" beforeDir="false" afterPath="$PROJECT_DIR$/build/reobfJar/mappings.tsrg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reobfJar/output.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/reobfJar/output.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-1.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-2.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-3.log.gz" afterDir="false" />
@@ -35,8 +36,8 @@
       <change beforePath="$PROJECT_DIR$/run/logs/latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/latest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/A whokle new world/DIM-1/data/raids.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/A whokle new world/DIM-1/data/raids.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/A whokle new world/DIM1/data/raids_end.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/A whokle new world/DIM1/data/raids_end.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/A whokle new world/advancements/380df991-f603-344c-a090-369bad2a924a.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/A whokle new world/advancements/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/A whokle new world/data/raids.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/A whokle new world/data/raids.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/A whokle new world/data/random_sequences.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/A whokle new world/data/random_sequences.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/A whokle new world/entities/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/A whokle new world/entities/r.-1.-1.mca" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/A whokle new world/entities/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/A whokle new world/entities/r.-1.0.mca" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/A whokle new world/entities/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/A whokle new world/entities/r.0.-1.mca" afterDir="false" />
@@ -52,9 +53,8 @@
       <change beforePath="$PROJECT_DIR$/run/saves/A whokle new world/session.lock" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/A whokle new world/session.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/A whokle new world/stats/380df991-f603-344c-a090-369bad2a924a.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/A whokle new world/stats/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/usercache.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/usercache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/block/custom/IdcardReaderBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/block/custom/IdcardReaderBlock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/block/entity/IdcardReaderBlockEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/block/entity/IdcardReaderBlockEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/block/entity/menu/IDCardReaderMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/block/entity/menu/IDCardReaderMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/item/custom/idcardItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/item/custom/idcardItem.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +125,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/GitTheHubOutOfHere/ID-Cards-1.20.1-Forge.git&quot;,
-    &quot;accountId&quot;: &quot;2d95c2a2-b779-4967-a228-7a730c654085&quot;
+    &quot;accountId&quot;: &quot;1e44c843-b71a-402a-8dbe-002ebb1c4aaa&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -136,25 +136,25 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.Build ID Cards 1.20.1 Forge.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.ID Cards 1.20.1 Forge [:cpw.mods.bootstraplauncher.BootstrapLauncher.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.ID Cards 1.20.1 Forge [:prepareRunClientCompile].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.ID Cards 1.20.1 Forge [build].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.ID Cards 1.20.1 Forge [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.ID Cards 1.20.1 Forge [runClient].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/David/Documents/ID Cards 1.20.1 Forge&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Java&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Build ID Cards 1.20.1 Forge.executor": "Run",
+    "Gradle.Download Sources.executor": "Run",
+    "Gradle.ID Cards 1.20.1 Forge [:cpw.mods.bootstraplauncher.BootstrapLauncher.main()].executor": "Run",
+    "Gradle.ID Cards 1.20.1 Forge [:prepareRunClientCompile].executor": "Run",
+    "Gradle.ID Cards 1.20.1 Forge [build].executor": "Run",
+    "Gradle.ID Cards 1.20.1 Forge [clean].executor": "Run",
+    "Gradle.ID Cards 1.20.1 Forge [runClient].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/David/Documents/ID Cards 1.20.1 Forge",
+    "settings.editor.selected.configurable": "configurable.group.appearance"
   }
-}</component>
-  <component name="RunManager" selected="Gradle.ID Cards 1.20.1 Forge [runClient]">
+}]]></component>
+  <component name="RunManager" selected="Gradle.ID Cards 1.20.1 Forge [build]">
     <configuration name="ID Cards 1.20.1 Forge [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -223,8 +223,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ID Cards 1.20.1 Forge [runClient]" />
         <item itemvalue="Gradle.ID Cards 1.20.1 Forge [build]" />
+        <item itemvalue="Gradle.ID Cards 1.20.1 Forge [runClient]" />
         <item itemvalue="Gradle.ID Cards 1.20.1 Forge [clean]" />
       </list>
     </recent_temporary>

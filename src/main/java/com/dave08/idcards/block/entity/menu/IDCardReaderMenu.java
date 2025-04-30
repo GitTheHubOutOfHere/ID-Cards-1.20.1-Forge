@@ -63,7 +63,7 @@ public class IDCardReaderMenu extends AbstractContainerMenu {
     @Override
     public ItemStack quickMoveStack(Player player, int i)
     {
-        return null;
+        return player.getInventory().getItem(1);
     }
 
     @Override
