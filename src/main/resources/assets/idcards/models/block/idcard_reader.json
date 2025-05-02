@@ -1,7 +1,12 @@
 {
-  "parent": "block/cube_all",
+  "parent": "block/cube",
   "textures": {
-    "particle": "block/idcard_reader",
-    "all": "block/idcard_reader"
+    "particle": "idcards:block/idcard_reader_side",
+    "down":    "idcards:block/idcard_reader_side",
+    "up":      "idcards:block/idcard_reader_side",
+    "north":   "idcards:block/idcard_reader_front",
+    "south":   "idcards:block/idcard_reader_side",
+    "west":    "idcards:block/idcard_reader_side",
+    "east":    "idcards:block/idcard_reader_side"
   }
 }
