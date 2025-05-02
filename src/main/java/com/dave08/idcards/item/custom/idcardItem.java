@@ -17,6 +17,7 @@ import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.phys.BlockHitResult;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import org.jetbrains.annotations.Nullable;
@@ -34,6 +35,7 @@ public class idcardItem extends Item
     @Override
     public InteractionResultHolder<ItemStack> use(Level pLevel, Player pPlayer, InteractionHand pUsedHand)
     {
+        //BlockHitResult blockHit = getPlayerPOVHitResult(pLevel, pPlayer)
         ItemStack stack = pPlayer.getItemInHand(pUsedHand);
         CompoundTag tag = stack.getOrCreateTag();
         if (tag.contains("OwnerUUID", Tag.TAG_INT_ARRAY)) {

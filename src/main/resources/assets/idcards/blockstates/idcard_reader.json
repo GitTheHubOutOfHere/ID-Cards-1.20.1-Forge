@@ -1,7 +1,13 @@
 {
   "variants": {
-    "": {
-      "model": "idcards:block/idcard_reader"
-    }
+    "facing=north,powered=false": { "model": "idcards:block/idcard_reader" },
+    "facing=south,powered=false": { "model": "idcards:block/idcard_reader", "y": 180 },
+    "facing=east,powered=false":  { "model": "idcards:block/idcard_reader", "y": 90 },
+    "facing=west,powered=false":  { "model": "idcards:block/idcard_reader", "y": 270 },
+
+    "facing=north,powered=true":  { "model": "idcards:block/idcard_reader" },
+    "facing=south,powered=true":  { "model": "idcards:block/idcard_reader", "y": 180 },
+    "facing=east,powered=true":   { "model": "idcards:block/idcard_reader", "y": 90 },
+    "facing=west,powered=true":   { "model": "idcards:block/idcard_reader", "y": 270 }
   }
 }

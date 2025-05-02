@@ -6,7 +6,7 @@ chatColors:true
 chatLinks:true
 chatLinksPrompt:true
 enableVsync:true
-entityShadows:true
+entityShadows:false
 forceUnicodeFont:false
 discrete_mouse_scroll:false
 invertYMouse:false
@@ -16,7 +16,7 @@ showSubtitles:false
 directionalAudio:false
 touchscreen:false
 fullscreen:false
-bobView:true
+bobView:false
 toggleCrouch:false
 toggleSprint:false
 darkMojangStudiosBackground:false
@@ -36,12 +36,12 @@ simulationDistance:12
 entityDistanceScaling:1.0
 guiScale:0
 particles:0
-maxFps:120
-graphicsMode:1
-ao:true
+maxFps:30
+graphicsMode:0
+ao:false
 prioritizeChunkUpdates:0
-biomeBlendRadius:2
-renderClouds:"true"
+biomeBlendRadius:0
+renderClouds:"fast"
 resourcePacks:[]
 incompatibleResourcePacks:[]
 lastServer:
@@ -63,7 +63,7 @@ chatHeightUnfocused:0.4375
 chatScale:1.0
 chatWidth:1.0
 notificationDisplayTime:1.0
-mipmapLevels:4
+mipmapLevels:0
 useNativeTransport:true
 mainHand:"right"
 attackIndicator:1

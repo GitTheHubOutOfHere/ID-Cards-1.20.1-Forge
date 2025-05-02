@@ -4,6 +4,7 @@ import com.dave08.idcards.IDCards;
 import com.dave08.idcards.block.entity.ModBlockEntities;
 import com.dave08.idcards.block.entity.menu.IDCardReaderMenu;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.ListTag;
 import net.minecraft.nbt.StringTag;
@@ -15,11 +16,13 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.MenuProvider;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,6 +30,7 @@ import java.util.UUID;
 
 public class IdcardReaderBlockEntity extends BlockEntity implements MenuProvider {
     private final Container container = new SimpleContainer(54);
+    private boolean isPowered = false;
 
     public Container getContainer() {
         return container;
@@ -45,10 +49,19 @@ public class IdcardReaderBlockEntity extends BlockEntity implements MenuProvider
         return Component.translatable("block.idcards.idcard_reader");
     }
 
+    public boolean getPowered() { return isPowered; }
+
+    public void setPowered(Boolean powered) {
+        this.isPowered = powered;
+        setChanged();
+    }
+
     @Override
     public AbstractContainerMenu createMenu(int id, Inventory inv, Player player) {
         return new IDCardReaderMenu(id, inv, this, container);
     }
+
+
 
     public void updateUUIDList(Container container) {
         storedUUIDs.clear();
@@ -77,6 +90,23 @@ public class IdcardReaderBlockEntity extends BlockEntity implements MenuProvider
 
     public void setOwner(UUID newOwner) {owner = newOwner;}
 
+    public void emitRedstoneSignal() {
+        Level world = this.level;
+        BlockPos pos = this.getBlockPos();
+
+        // Set a specific Redstone strength, such as 15
+        int signalStrength = 15;
+        world.setBlockAndUpdate(pos, this.getBlockState().setValue(BlockStateProperties.POWER, signalStrength));
+
+        // Notify neighbors about the Redstone signal change
+        world.updateNeighborsAt(pos, this.getBlockState().getBlock());
+        for (Direction direction : Direction.values()) {
+            BlockPos neighborPos = pos.relative(direction);
+            BlockState neighborState = world.getBlockState(neighborPos);
+            world.updateNeighborsAt(neighborPos, neighborState.getBlock());
+        }
+    }
+
     @Override
     protected void saveAdditional(CompoundTag tag) {
         super.saveAdditional(tag);
@@ -100,6 +130,8 @@ public class IdcardReaderBlockEntity extends BlockEntity implements MenuProvider
 
         //IDCards.LOGGER.info("Stored UUIDs: {}", uuidList); // Debugging log
         tag.putUUID("Owner", owner);
+
+        tag.putBoolean("powered", isPowered);
     }
 
     @Override
@@ -125,5 +157,7 @@ public class IdcardReaderBlockEntity extends BlockEntity implements MenuProvider
 
         //IDCards.LOGGER.info("Loaded UUIDs: {}", uuidList); // Debugging log
         owner = tag.getUUID("Owner");
+
+        isPowered = tag.getBoolean("powered");
     }
 }
