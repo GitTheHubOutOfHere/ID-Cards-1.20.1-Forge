@@ -2,4 +2,4 @@
 By Dave08
 
 ## Info?
-You can find out about this mod on its Modrinth page: 
+You can find out about this mod on its Modrinth page: [ID Cards](https://modrinth.com/project/UxExlYHw)
