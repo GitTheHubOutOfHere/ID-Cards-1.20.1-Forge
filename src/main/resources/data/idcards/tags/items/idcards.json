@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "idcards:black_idcard",
+    "idcards:blue_idcard",
+    "idcards:brown_idcard",
+    "idcards:cyan_idcard",
+    "idcards:gray_idcard",
+    "idcards:green_idcard",
+    "idcards:light_blue_idcard",
+    "idcards:light_gray_idcard",
+    "idcards:lime_idcard",
+    "idcards:magenta_idcard",
+    "idcards:orange_idcard",
+    "idcards:pink_idcard",
+    "idcards:purple_idcard",
+    "idcards:red_idcard",
+    "idcards:white_idcard",
+    "idcards:yellow_idcard"
+  ]
+}

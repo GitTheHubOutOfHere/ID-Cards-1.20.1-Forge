@@ -9,7 +9,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Inventory;
 
 public class IDCardReaderScreen extends AbstractContainerScreen<IDCardReaderMenu> {
-    private static final ResourceLocation TEXTURE = new ResourceLocation("minecraft", "textures/gui/container/generic_54.png");
+    private @SuppressWarnings("deprication") static final ResourceLocation TEXTURE = new ResourceLocation("minecraft", "textures/gui/container/generic_54.png");
 
     public IDCardReaderScreen(IDCardReaderMenu menu, Inventory playerInv, Component title) {
         super(menu, playerInv, title);

@@ -31,7 +31,7 @@ public class IDCards
     // Directly reference a slf4j logger
     public static final Logger LOGGER = LogUtils.getLogger();
 
-    @SuppressWarnings("depricated")
+    @SuppressWarnings("deprication")
     public IDCards(FMLJavaModLoadingContext context)
     {
         IEventBus modEventBus = context.getModEventBus();
@@ -70,6 +70,8 @@ public class IDCards
         /*if(event.getTabKey() == CreativeModeTabs.INGREDIENTS)
         {
             event.accept(ModItems.IDCARD);
+            event.accept(ModBlocks.IDCARD_READER);
+
         }/**/
     }
 

@@ -1,10 +1,5 @@
-#Whether to log the dirt block on common setup
-logDirtBlock = true
-#A magic number
-#Range: > 0
-magicNumber = 42
-#What you want the introduction message to be for the magic number
-magicNumberIntroduction = "The magic number is... "
-#A list of items to log on common setup.
-items = ["minecraft:iron_ingot"]
+#Whether to allow users who are only on the trust list of an ID Card Reader to edit its trust list
+allowTrustListToEdit = false
+#Whether to anger nearby piglins when you open an ID Card Reader's trust list menu, they also don't like people stealing *cough* their IDs
+angerPiglinsOnOpenTrustList = false
 

@@ -1,0 +1,207 @@
+{
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2025-05-03 14:57:34 +1000"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2025-05-03 14:57:35 +1000"
+    },
+    "done": false
+  },
+  "minecraft:story/root": {
+    "criteria": {
+      "crafting_table": "2025-05-03 14:58:01 +1000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/lime_dye": {
+    "criteria": {
+      "has_green_dye": "2025-05-03 14:58:15 +1000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/cyan_dye": {
+    "criteria": {
+      "has_green_dye": "2025-05-03 14:58:15 +1000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dye_green_bed": {
+    "criteria": {
+      "has_needed_dye": "2025-05-03 14:58:15 +1000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dye_green_carpet": {
+    "criteria": {
+      "has_needed_dye": "2025-05-03 14:58:15 +1000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/green_stained_glass_pane_from_glass_pane": {
+    "criteria": {
+      "has_green_dye": "2025-05-03 14:58:15 +1000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/green_candle": {
+    "criteria": {
+      "has_green_dye": "2025-05-03 14:58:15 +1000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dye_green_wool": {
+    "criteria": {
+      "has_needed_dye": "2025-05-03 14:58:15 +1000"
+    },
+    "done": true
+  },
+  "idcards:recipes/misc/yellow_idcard": {
+    "criteria": {
+      "has_idcard": "2025-05-03 14:58:26 +1000"
+    },
+    "done": true
+  },
+  "idcards:recipes/misc/light_gray_idcard": {
+    "criteria": {
+      "has_idcard": "2025-05-03 14:58:26 +1000"
+    },
+    "done": true
+  },
+  "idcards:recipes/misc/light_blue_idcard": {
+    "criteria": {
+      "has_idcard": "2025-05-03 14:58:26 +1000"
+    },
+    "done": true
+  },
+  "idcards:recipes/misc/purple_idcard": {
+    "criteria": {
+      "has_idcard": "2025-05-03 14:58:26 +1000"
+    },
+    "done": true
+  },
+  "idcards:recipes/misc/green_idcard": {
+    "criteria": {
+      "has_idcard": "2025-05-03 14:58:26 +1000"
+    },
+    "done": true
+  },
+  "idcards:recipes/misc/gray_idcard": {
+    "criteria": {
+      "has_idcard": "2025-05-03 14:58:26 +1000"
+    },
+    "done": true
+  },
+  "idcards:recipes/misc/brown_idcard": {
+    "criteria": {
+      "has_idcard": "2025-05-03 14:58:26 +1000"
+    },
+    "done": true
+  },
+  "idcards:recipes/misc/red_idcard": {
+    "criteria": {
+      "has_idcard": "2025-05-03 14:58:26 +1000"
+    },
+    "done": true
+  },
+  "idcards:recipes/misc/white_idcard": {
+    "criteria": {
+      "has_idcard": "2025-05-03 14:58:26 +1000"
+    },
+    "done": true
+  },
+  "idcards:recipes/misc/lime_idcard": {
+    "criteria": {
+      "has_idcard": "2025-05-03 14:58:26 +1000"
+    },
+    "done": true
+  },
+  "idcards:recipes/misc/pink_idcard": {
+    "criteria": {
+      "has_idcard": "2025-05-03 14:58:26 +1000"
+    },
+    "done": true
+  },
+  "idcards:recipes/misc/magenta_idcard": {
+    "criteria": {
+      "has_idcard": "2025-05-03 14:58:26 +1000"
+    },
+    "done": true
+  },
+  "idcards:recipes/misc/black_idcard": {
+    "criteria": {
+      "has_idcard": "2025-05-03 14:58:26 +1000"
+    },
+    "done": true
+  },
+  "idcards:recipes/misc/orange_idcard": {
+    "criteria": {
+      "has_idcard": "2025-05-03 14:58:26 +1000"
+    },
+    "done": true
+  },
+  "idcards:recipes/misc/blue_idcard": {
+    "criteria": {
+      "has_idcard": "2025-05-03 14:58:26 +1000"
+    },
+    "done": true
+  },
+  "idcards:recipes/misc/cyan_idcard": {
+    "criteria": {
+      "has_idcard": "2025-05-03 14:58:26 +1000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/redstone_torch": {
+    "criteria": {
+      "has_redstone": "2025-05-03 14:59:31 +1000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/clock": {
+    "criteria": {
+      "has_redstone": "2025-05-03 14:59:31 +1000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/dropper": {
+    "criteria": {
+      "has_redstone": "2025-05-03 14:59:31 +1000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/redstone_block": {
+    "criteria": {
+      "has_redstone": "2025-05-03 14:59:31 +1000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/note_block": {
+    "criteria": {
+      "has_redstone": "2025-05-03 14:59:31 +1000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/target": {
+    "criteria": {
+      "has_redstone": "2025-05-03 14:59:31 +1000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/compass": {
+    "criteria": {
+      "has_redstone": "2025-05-03 14:59:31 +1000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/piston": {
+    "criteria": {
+      "has_redstone": "2025-05-03 14:59:31 +1000"
+    },
+    "done": true
+  },
+  "DataVersion": 3465
+}

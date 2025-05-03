@@ -27,10 +27,7 @@ import java.util.UUID;
 
 public class idcardItem extends Item
 {
-    public idcardItem(Properties pProperties)
-    {
-        super(pProperties);
-    }
+    public idcardItem(Properties pProperties) { super(pProperties); }
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level pLevel, Player pPlayer, InteractionHand pUsedHand)

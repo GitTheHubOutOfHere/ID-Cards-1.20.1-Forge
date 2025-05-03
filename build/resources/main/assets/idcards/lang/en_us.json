@@ -1,7 +1,22 @@
 {
-  "creativetab.idcards_tab": "ID Cards",
+  "creativetab.idcards.idcards_tab.name": "ID Cards",
 
-  "item.idcards.idcard": "ID Card",
+  "item.idcards.black_idcard": "Black ID Card",
+  "item.idcards.blue_idcard": "Blue ID Card",
+  "item.idcards.brown_idcard": "Brown ID Card",
+  "item.idcards.cyan_idcard": "Cyan ID Card",
+  "item.idcards.gray_idcard": "Gray ID Card",
+  "item.idcards.green_idcard": "Green ID Card",
+  "item.idcards.light_blue_idcard": "Light Blue ID Card",
+  "item.idcards.light_gray_idcard": "Light Gray ID Card",
+  "item.idcards.lime_idcard": "Lime ID Card",
+  "item.idcards.magenta_idcard": "Magenta ID Card",
+  "item.idcards.orange_idcard": "Orange ID Card",
+  "item.idcards.pink_idcard": "Pink ID Card",
+  "item.idcards.purple_idcard": "Purple ID Card",
+  "item.idcards.red_idcard": "Red ID Card",
+  "item.idcards.white_idcard": "White ID Card",
+  "item.idcards.yellow_idcard": "Yellow ID Card",
   "item.idcards.idcard.tooltip.base1": "Used to identify people",
   "item.idcards.idcard.tooltip.base2": "Right-click to take ownership of it",
   "item.idcards.idcard.tooltip.base3": "Right-click + Shift to clear ownership",
@@ -11,5 +26,8 @@
   "item.idcards.idcard.actionBarMessage.AlreadyLinked": "This ID Card is already linked, press shift and right-click it to clear its ownership",
   "item.idcards.idcard.actionBarMessage.NotOwner": "You are not the owner of this ID Card and cannot clear its ownership",
 
-  "block.idcards.idcard_reader": "ID Card Reader"
+  "block.idcards.idcard_reader": "ID Card Reader",
+  "blocl.idcards.idcard_reader.ui_title": "ID Card Reader Trust List",
+  "block.idcards.idcard_reader.no_edit_trust_list": "You do not have permission to edit this ID Card reader's trust list.",
+  "block.idcards.idcard_reader.not_valid_id_card": "Please use an ID Card that is already bound to someone"
 }

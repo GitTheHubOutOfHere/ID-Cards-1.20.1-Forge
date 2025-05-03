@@ -1,2 +1,17 @@
-// 1.20.1	2025-04-12T14:32:09.169047	Item Models: idcards
-29c61343bdc3107bcf8b7a187983c93b12093084 assets/idcards/models/item/idcard.json
+// 1.20.1	2025-05-03T14:00:33.5212874	Item Models: idcards
+c290e53c752ae7ba79be5c42569b88a9ea9b0b14 assets/idcards/models/item/black_idcard.json
+05a9b2b42dcb3eaecd5c59aadf11989d99c5d62f assets/idcards/models/item/blue_idcard.json
+4188e55503460461930712c0c38a2a8d1376dfcf assets/idcards/models/item/brown_idcard.json
+a4f7a26766a3d07335f2b23ea580d5b1a67f8c48 assets/idcards/models/item/cyan_idcard.json
+5972b7d0615855ef1b824285101b392bbc512749 assets/idcards/models/item/gray_idcard.json
+6cd9dfb13689b978b9d1e465effeb85b6b1ee22c assets/idcards/models/item/green_idcard.json
+f298a3ed46bab45af4a5c6b212b7d7ac7202af8e assets/idcards/models/item/light_blue_idcard.json
+800ff404657c44e5f62dc77190600a7aca5b47e6 assets/idcards/models/item/light_gray_idcard.json
+84f9763cef08cf23eb7b00fe1a5920f8e8e5488f assets/idcards/models/item/lime_idcard.json
+a6e3e832c1b58e167c42d37d6f9587b187ae84f2 assets/idcards/models/item/magenta_idcard.json
+82f267a42542f724ea0f17701b8eae43295116da assets/idcards/models/item/orange_idcard.json
+527559dfcb0315a5aec4ad8e41f881598b3d965a assets/idcards/models/item/pink_idcard.json
+21c5be4b348f7526096e6f011b9ddba9096b261b assets/idcards/models/item/purple_idcard.json
+0de91b25756ecc62001de8dc249a3ab6bf5af7b6 assets/idcards/models/item/red_idcard.json
+e7d2ce85da192b91a2385c8bf95d284cff65f91a assets/idcards/models/item/white_idcard.json
+2b6faf14f74bf9562fa5733f0a00203e1628dea9 assets/idcards/models/item/yellow_idcard.json

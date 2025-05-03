@@ -17,7 +17,22 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        simpleItem(ModItems.IDCARD);
+        simpleItem(ModItems.BLACK_IDCARD);
+        simpleItem(ModItems.BLUE_IDCARD);
+        simpleItem(ModItems.BROWN_IDCARD);
+        simpleItem(ModItems.CYAN_IDCARD);
+        simpleItem(ModItems.GRAY_IDCARD);
+        simpleItem(ModItems.GREEN_IDCARD);
+        simpleItem(ModItems.LIGHT_BLUE_IDCARD);
+        simpleItem(ModItems.LIGHT_GRAY_IDCARD);
+        simpleItem(ModItems.LIME_IDCARD);
+        simpleItem(ModItems.MAGENTA_IDCARD);
+        simpleItem(ModItems.ORANGE_IDCARD);
+        simpleItem(ModItems.PINK_IDCARD);
+        simpleItem(ModItems.PURPLE_IDCARD);
+        simpleItem(ModItems.RED_IDCARD);
+        simpleItem(ModItems.WHITE_IDCARD);
+        simpleItem(ModItems.YELLOW_IDCARD);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

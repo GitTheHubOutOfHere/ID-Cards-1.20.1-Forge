@@ -1,16 +1,9 @@
 package com.dave08.idcards;
 
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.Item;
 import net.minecraftforge.common.ForgeConfigSpec;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.config.ModConfigEvent;
-import net.minecraftforge.registries.ForgeRegistries;
-
-import java.util.List;
-import java.util.Set;
-import java.util.stream.Collectors;
 
 // An example config class. This is not required, but it's a good idea to have one to keep your config organized.
 // Demonstrates how to use Forge's config APIs
@@ -19,11 +12,15 @@ public class Config
 {
     private static final ForgeConfigSpec.Builder BUILDER = new ForgeConfigSpec.Builder();
 
-    private static final ForgeConfigSpec.BooleanValue LOG_DIRT_BLOCK = BUILDER
-            .comment("Whether to log the dirt block on common setup")
-            .define("logDirtBlock", true);
+    private static final ForgeConfigSpec.BooleanValue ALLOW_TRUST_LIST_EDIT = BUILDER
+            .comment("Whether to allow users who are only on the trust list of an ID Card Reader to edit its trust list")
+            .define("allowTrustListToEdit", false);
 
-    private static final ForgeConfigSpec.IntValue MAGIC_NUMBER = BUILDER
+    private static final ForgeConfigSpec.BooleanValue OPEN_TRUST_LIST_ANGERS_PIGLINS = BUILDER
+            .comment("Whether to anger nearby piglins when you open an ID Card Reader's trust list menu, they also don't like people stealing *cough* their IDs")
+            .define("angerPiglinsOnOpenTrustList", false);
+
+    /*private static final ForgeConfigSpec.IntValue MAGIC_NUMBER = BUILDER
             .comment("A magic number")
             .defineInRange("magicNumber", 42, 0, Integer.MAX_VALUE);
 
@@ -34,30 +31,32 @@ public class Config
     // a list of strings that are treated as resource locations for items
     private static final ForgeConfigSpec.ConfigValue<List<? extends String>> ITEM_STRINGS = BUILDER
             .comment("A list of items to log on common setup.")
-            .defineListAllowEmpty("items", List.of("minecraft:iron_ingot"), Config::validateItemName);
+            .defineListAllowEmpty("items", List.of("minecraft:iron_ingot"), Config::validateItemName);/**/
 
     static final ForgeConfigSpec SPEC = BUILDER.build();
 
-    public static boolean logDirtBlock;
-    public static int magicNumber;
+    public static boolean allowTrustListToEdit;
+    public static boolean angerPiglinsOnOpenTrustList;
+    /*public static int magicNumber;
     public static String magicNumberIntroduction;
-    public static Set<Item> items;
+    public static Set<Item> items;/**/
 
-    private static boolean validateItemName(final Object obj)
+    /*private static boolean validateItemName(final Object obj)
     {
         return obj instanceof final String itemName && ForgeRegistries.ITEMS.containsKey(new ResourceLocation(itemName));
-    }
+    }/**/
 
     @SubscribeEvent
     static void onLoad(final ModConfigEvent event)
     {
-        logDirtBlock = LOG_DIRT_BLOCK.get();
-        magicNumber = MAGIC_NUMBER.get();
+        allowTrustListToEdit = ALLOW_TRUST_LIST_EDIT.get();
+        angerPiglinsOnOpenTrustList = ALLOW_TRUST_LIST_EDIT.get();
+        /*magicNumber = MAGIC_NUMBER.get();
         magicNumberIntroduction = MAGIC_NUMBER_INTRODUCTION.get();
 
         // convert the list of strings into a set of items
         items = ITEM_STRINGS.get().stream()
                 .map(itemName -> ForgeRegistries.ITEMS.getValue(new ResourceLocation(itemName)))
-                .collect(Collectors.toSet());
+                .collect(Collectors.toSet());/**/
     }
 }

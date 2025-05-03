@@ -31,6 +31,7 @@ import java.util.UUID;
 public class IdcardReaderBlockEntity extends BlockEntity implements MenuProvider {
     private final Container container = new SimpleContainer(54);
     private boolean isPowered = false;
+    private String customName;
 
     public Container getContainer() {
         return container;
@@ -44,9 +45,11 @@ public class IdcardReaderBlockEntity extends BlockEntity implements MenuProvider
         super(ModBlockEntities.IDCARD_READER_BE.get(), pos, state);
     }
 
+    public void setCustomName(String name) { customName = name; }
+
     @Override
     public Component getDisplayName() {
-        return Component.translatable("block.idcards.idcard_reader");
+        return customName == null ? Component.translatable("block.idcards.idcard_reader") : Component.literal(customName);
     }
 
     public boolean getPowered() { return isPowered; }
@@ -132,6 +135,8 @@ public class IdcardReaderBlockEntity extends BlockEntity implements MenuProvider
         tag.putUUID("Owner", owner);
 
         tag.putBoolean("powered", isPowered);
+
+        if (customName != null) { tag.putString("customName", customName); }
     }
 
     @Override
@@ -159,5 +164,7 @@ public class IdcardReaderBlockEntity extends BlockEntity implements MenuProvider
         owner = tag.getUUID("Owner");
 
         isPowered = tag.getBoolean("powered");
+
+        if (customName != null) { customName = tag.getString("customName"); }
     }
 }

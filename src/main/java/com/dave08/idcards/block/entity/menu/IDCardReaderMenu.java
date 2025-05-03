@@ -3,6 +3,8 @@ package com.dave08.idcards.block.entity.menu;
 import com.dave08.idcards.block.entity.IdcardReaderBlockEntity;
 import com.dave08.idcards.block.entity.menu.ModMenus;
 import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.Container;
 import net.minecraft.world.SimpleContainer;
 import net.minecraft.world.entity.player.Inventory;
@@ -34,7 +36,7 @@ public class IDCardReaderMenu extends AbstractContainerMenu {
 
                     @Override
                     public boolean mayPlace(ItemStack stack) {
-                        return stack.getItem().getDescriptionId().equals("item.idcards.idcard") &&
+                        return stack.is(ItemTags.create(new ResourceLocation("idcards", "idcards"))) &&
                                 stack.hasTag() &&
                                 stack.getTag().contains("OwnerUUID");
                     }
