@@ -1,5 +1,0 @@
-#Whether to allow users who are only on the trust list of an ID Card Reader to edit its trust list
-allowTrustListToEdit = false
-#Whether to anger nearby piglins when you open an ID Card Reader's trust list menu, they also don't like people stealing *cough* their IDs
-angerPiglinsOnOpenTrustList = false
-
