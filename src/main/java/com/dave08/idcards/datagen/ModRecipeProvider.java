@@ -1,22 +1,13 @@
 package com.dave08.idcards.datagen;
 
-import com.dave08.idcards.IDCards;
 import com.dave08.idcards.item.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
-import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
-import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.item.crafting.AbstractCookingRecipe;
-import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.crafting.RecipeSerializer;
-import net.minecraft.world.level.ItemLike;
-import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 
-import java.util.List;
 import java.util.function.Consumer;
 
 public class ModRecipeProvider extends RecipeProvider implements IConditionBuilder {
@@ -33,14 +24,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     protected void buildRecipes(Consumer<FinishedRecipe> pWriter) {
         System.out.println("Generating recipes");
         //oreSmelting(pWriter, SAPPHIRE_SMELTABLES, RecipeCategory.MISC, ModItems.SAPPHIRE.get(), 0.25f, 200, "sapphire");
-
-        /*ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SAPPHIRE_BLOCK.get())
-                .pattern("SSS")
-                .pattern("SSS")
-                .pattern("SSS")
-                .define('S', ModItems.SAPPHIRE.get())
-                .unlockedBy(getHasName(ModItems.SAPPHIRE.get()), has(ModItems.SAPPHIRE.get()))
-                .save(pWriter);*/
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.BLACK_IDCARD.get())
                 .requires(ItemTags.create(new ResourceLocation("idcards", "idcards")))
@@ -122,7 +105,18 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(Items.YELLOW_DYE)
                 .unlockedBy("has_idcard", has(ItemTags.create(new ResourceLocation("idcards", "idcards"))))
                 .save(pWriter);
-    }
+
+        // Lets you get the id card in the first place
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.WHITE_IDCARD.get())
+                .pattern(" S ")
+                .pattern(" R ")
+                .pattern(" I ")
+                .define('S', Items.INK_SAC)
+                .define('R', Items.REDSTONE)
+                .define('I', Items.IRON_NUGGET)
+                .unlockedBy("has_special_core", has(Items.IRON_NUGGET))
+                .save(pWriter, new ResourceLocation("idcards", "white_idcard_from_sri"));
+    } // ResourceLocation("{mod_id}", "{desired_recipe_name}") will set the recipe name to {desired_recipe_name} for items  with multiple recipes
 
     /*protected static void oreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {
         oreCooking(pFinishedRecipeConsumer, RecipeSerializer.SMELTING_RECIPE, pIngredients, pCategory, pResult, pExperience, pCookingTIme, pGroup, "_from_smelting");

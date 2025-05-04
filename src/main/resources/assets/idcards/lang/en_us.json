@@ -20,6 +20,7 @@
   "item.idcards.idcard.tooltip.base1": "Used to identify people",
   "item.idcards.idcard.tooltip.base2": "Right-click to take ownership of it",
   "item.idcards.idcard.tooltip.base3": "Right-click + Shift to clear ownership",
+  "item.idcards.idcard.tooltip.uses_stat_base": "Uses: %s",
   "item.idcards.idcard.tooltip.owner": "Owner: %s",
   "item.idcards.idcard.actionBarMessage.Linked": "Owner set to %s",
   "item.idcards.idcard.actionBarMessage.Unlinked": "Owner cleared",

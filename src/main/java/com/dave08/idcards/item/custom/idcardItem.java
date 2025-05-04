@@ -1,5 +1,6 @@
 package com.dave08.idcards.item.custom;
 
+import com.dave08.idcards.IDCards;
 import com.dave08.idcards.block.ModBlocks;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.gui.screens.Screen;
@@ -32,7 +33,6 @@ public class idcardItem extends Item
     @Override
     public InteractionResultHolder<ItemStack> use(Level pLevel, Player pPlayer, InteractionHand pUsedHand)
     {
-        //BlockHitResult blockHit = getPlayerPOVHitResult(pLevel, pPlayer)
         ItemStack stack = pPlayer.getItemInHand(pUsedHand);
         CompoundTag tag = stack.getOrCreateTag();
         if (tag.contains("OwnerUUID", Tag.TAG_INT_ARRAY)) {
@@ -95,7 +95,8 @@ public class idcardItem extends Item
             tooltip.add(Component.translatable("item.idcards.idcard.tooltip.base3"));
         }
 
-        if (stack.hasTag() && stack.getTag().contains("OwnerName", Tag.TAG_STRING)) {
+        if (stack.hasTag() && stack.getTag().contains("OwnerName", Tag.TAG_STRING))
+        {
             Component ownerName = Component.literal(stack.getTag().getString("OwnerName")).withStyle(ChatFormatting.GREEN);
             tooltip.add(Component.literal(""));
             tooltip.add(Component.translatable("item.idcards.idcard.tooltip.owner", ownerName));
