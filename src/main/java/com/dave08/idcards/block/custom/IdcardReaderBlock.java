@@ -67,7 +67,7 @@ public class IdcardReaderBlock extends Block implements EntityBlock {
             for (Direction dir : Direction.values()) {
                 level.updateNeighborsAt(pos.relative(dir), this);
             }
-            level.scheduleTick(pos, this, 2);
+            level.scheduleTick(pos, this, 2); // pDelay, the value that took 2 hours to fix. IT IS 2!
         }
     }
 
