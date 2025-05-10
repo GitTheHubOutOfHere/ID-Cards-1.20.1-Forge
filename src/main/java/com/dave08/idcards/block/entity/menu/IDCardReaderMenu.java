@@ -1,5 +1,6 @@
 package com.dave08.idcards.block.entity.menu;
 
+import com.dave08.idcards.IDCards;
 import com.dave08.idcards.block.entity.IdcardReaderBlockEntity;
 import com.dave08.idcards.block.entity.menu.ModMenus;
 import net.minecraft.network.FriendlyByteBuf;
@@ -10,6 +11,7 @@ import net.minecraft.world.SimpleContainer;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
+import net.minecraft.world.inventory.ContainerData;
 import net.minecraft.world.inventory.MenuType;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.ItemStack;
@@ -17,6 +19,7 @@ import net.minecraft.world.item.ItemStack;
 public class IDCardReaderMenu extends AbstractContainerMenu {
     private final Container container;
     private final IdcardReaderBlockEntity blockEntity;
+    private final ContainerData data;
 
     public IDCardReaderMenu(int id, Inventory inv, FriendlyByteBuf buf) {
         this(id, inv, (IdcardReaderBlockEntity) inv.player.level().getBlockEntity(buf.readBlockPos()),
@@ -27,6 +30,8 @@ public class IDCardReaderMenu extends AbstractContainerMenu {
         super(ModMenus.ID_CARD_READER_MENU.get(), id);
         this.container = container;
         this.blockEntity = be;
+        this.data = blockEntity.getDataAccess();
+        addDataSlots(data);
 
         for (int i = 0; i < 6; ++i) {
             for (int j = 0; j < 9; ++j) {
@@ -62,6 +67,11 @@ public class IDCardReaderMenu extends AbstractContainerMenu {
             this.addSlot(new Slot(inv, i, 8 + i * 18, 198));
     }
 
+    public IdcardReaderBlockEntity getBlockEntity()
+    {
+        return blockEntity;
+    }
+
     @Override
     public ItemStack quickMoveStack(Player player, int i)
     {
@@ -71,5 +81,12 @@ public class IDCardReaderMenu extends AbstractContainerMenu {
     @Override
     public boolean stillValid(Player player) {
         return true;
+    }
+
+    public void setPulseLength(Integer newPulseLength) { blockEntity.setPulseLength(newPulseLength); }
+    
+    public int getPulseLength() {
+        IDCards.LOGGER.info("Getting value (2): " + data.get(0));
+        return data.get(0);
     }
 }

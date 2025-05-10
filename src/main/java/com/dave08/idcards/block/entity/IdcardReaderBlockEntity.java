@@ -15,6 +15,7 @@ import net.minecraft.world.SimpleContainer;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
+import net.minecraft.world.inventory.ContainerData;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
@@ -32,6 +33,7 @@ public class IdcardReaderBlockEntity extends BlockEntity implements MenuProvider
     private final Container container = new SimpleContainer(54);
     private boolean isPowered = false;
     private String customName;
+    private int pulseLength;
 
     public Container getContainer() {
         return container;
@@ -46,6 +48,12 @@ public class IdcardReaderBlockEntity extends BlockEntity implements MenuProvider
     }
 
     public void setCustomName(String name) { customName = name; }
+
+    public void setPulseLength(Integer newPulseLength) {
+        pulseLength = newPulseLength;
+        setChanged();
+        IDCards.LOGGER.info("Called setPulseLength() on: " + (level != null && level.isClientSide ? "CLIENT" : "SERVER")); }
+    public int getPulseLength() { return pulseLength; }
 
     @Override
     public Component getDisplayName() {
@@ -63,8 +71,6 @@ public class IdcardReaderBlockEntity extends BlockEntity implements MenuProvider
     public AbstractContainerMenu createMenu(int id, Inventory inv, Player player) {
         return new IDCardReaderMenu(id, inv, this, container);
     }
-
-
 
     public void updateUUIDList(Container container) {
         storedUUIDs.clear();
@@ -136,6 +142,9 @@ public class IdcardReaderBlockEntity extends BlockEntity implements MenuProvider
 
         tag.putBoolean("powered", isPowered);
 
+        tag.putInt("pulseLength", pulseLength);
+        IDCards.LOGGER.info("Pulse length saved: " + tag.getInt("pulseLength"));
+
         if (customName != null) { tag.putString("customName", customName); }
     }
 
@@ -165,6 +174,33 @@ public class IdcardReaderBlockEntity extends BlockEntity implements MenuProvider
 
         isPowered = tag.getBoolean("powered");
 
+        pulseLength = tag.getInt("pulseLength");
+        IDCards.LOGGER.info("Getting value (0): " + tag.getInt("pulseLength"));
+
         if (customName != null) { customName = tag.getString("customName"); }
     }
+
+    private final ContainerData dataAccess = new ContainerData() {
+        @Override
+        public int get(int index) {
+            IDCards.LOGGER.info("Getting value (1): " + pulseLength);
+            if (index == 0) return pulseLength;
+            return 0;
+        }
+
+        @Override
+        public void set(int index, int value) {
+            if (index == 0) pulseLength = value;
+        }
+
+        @Override
+        public int getCount() {
+            return 1;
+        }
+    };
+
+    public ContainerData getDataAccess() {
+        return dataAccess;
+    }
+
 }

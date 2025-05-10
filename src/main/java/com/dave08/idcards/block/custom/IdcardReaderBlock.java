@@ -61,13 +61,15 @@ public class IdcardReaderBlock extends Block implements EntityBlock {
     // Function to trigger a 1-tick redstone signal
     public void emitRedstonePulse(BlockState state, Level level, BlockPos pos) {
         if (!state.getValue(POWERED)) {
+            BlockEntity be = level.getBlockEntity(pos);
             BlockState newState = state.setValue(POWERED, true);
             level.setBlock(pos, newState, Block.UPDATE_ALL);
             level.updateNeighborsAt(pos, this);
             for (Direction dir : Direction.values()) {
                 level.updateNeighborsAt(pos.relative(dir), this);
             }
-            level.scheduleTick(pos, this, 2);
+            if (level.getBlockEntity(pos) instanceof IdcardReaderBlockEntity reader) {
+                level.scheduleTick(pos, this, reader.getPulseLength()); } else { level.scheduleTick(pos, this, 2); }
         }
     }
 

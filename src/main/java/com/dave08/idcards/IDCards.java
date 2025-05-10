@@ -7,7 +7,6 @@ import com.dave08.idcards.client.screen.ClientModScreens;
 import com.dave08.idcards.item.ModItems;
 import com.dave08.idcards.item.ModTabs;
 import com.mojang.logging.LogUtils;
-import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -61,7 +60,7 @@ public class IDCards
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
-
+        event.enqueueWork(ModNetworking::register);
     }
 
     // Add the example block item to the building blocks tab
