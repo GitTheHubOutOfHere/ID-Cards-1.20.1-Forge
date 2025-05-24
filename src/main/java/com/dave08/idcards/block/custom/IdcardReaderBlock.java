@@ -19,7 +19,6 @@ import net.minecraft.world.MenuProvider;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.monster.piglin.PiglinAi;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.inventory.ContainerData;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
@@ -70,7 +69,7 @@ public class IdcardReaderBlock extends Block implements EntityBlock {
                 level.updateNeighborsAt(pos.relative(dir), this);
             }
             if (level.getBlockEntity(pos) instanceof IdcardReaderBlockEntity reader) {
-                level.scheduleTick(pos, this, reader.getDataAccess().get(0) + 1); } else {/**/ level.scheduleTick(pos, this, 2); }
+                level.scheduleTick(pos, this, reader.getPulseLength()); } else { level.scheduleTick(pos, this, 2); }
         }
     }
 
