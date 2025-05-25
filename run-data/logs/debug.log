@@ -343,7 +343,7 @@ java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent
 [04May2025 14:14:17.210] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.config.ConfigTracker/CONFIG]: Config file idcards-common.toml for idcards tracking
 [04May2025 14:14:17.210] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for idcards
 [04May2025 14:14:17.218] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.dave08.idcards.client.screen.ClientModScreens to MOD
-[04May2025 14:14:17.218] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.dave08.idcards.Config to MOD
+[04May2025 14:14:17.218] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.dave08.idcards.ServerConfig to MOD
 [04May2025 14:14:17.218] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.config.ConfigTracker/CONFIG]: Config file forge-client.toml for forge tracking
 [04May2025 14:14:17.218] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.config.ConfigTracker/CONFIG]: Config file forge-server.toml for forge tracking
 [04May2025 14:14:17.218] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.ModLoadingContext/]: Attempted to register an empty config for type COMMON on mod forge

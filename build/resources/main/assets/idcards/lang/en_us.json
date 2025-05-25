@@ -27,7 +27,8 @@
   "item.idcards.idcard.actionBarMessage.AlreadyLinked": "This ID Card is already linked, press shift and right-click it to clear its ownership",
   "item.idcards.idcard.actionBarMessage.NotOwner": "You are not the owner of this ID Card and cannot clear its ownership",
 
-  "block.idcards.idcard_reader": "ID Card Reader",
+  "block.idcards.idcard_reader_no_extra": "ID Card Reader",
+  "block.idcards.idcard_reader_extra": "ID Card Reader trust list",
   "blocl.idcards.idcard_reader.ui_title": "ID Card Reader Trust List",
   "block.idcards.idcard_reader.no_edit_trust_list": "You do not have permission to edit this ID Card reader's trust list.",
   "block.idcards.idcard_reader.not_valid_id_card": "Please use an ID Card that is already bound to someone"

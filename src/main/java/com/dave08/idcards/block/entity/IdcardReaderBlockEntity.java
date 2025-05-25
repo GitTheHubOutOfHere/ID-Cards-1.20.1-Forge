@@ -57,7 +57,7 @@ public class IdcardReaderBlockEntity extends BlockEntity implements MenuProvider
 
     @Override
     public Component getDisplayName() {
-        return customName == null ? Component.translatable("block.idcards.idcard_reader") : Component.literal(customName);
+        return customName == null ? Component.translatable("block.idcards.idcard_reader") : Component.literal(customName + " trust list");
     }
 
     public boolean getPowered() { return isPowered; }
@@ -142,8 +142,8 @@ public class IdcardReaderBlockEntity extends BlockEntity implements MenuProvider
 
         tag.putBoolean("powered", isPowered);
 
-        tag.putInt("pulseLength", pulseLength);
-        IDCards.LOGGER.info("Pulse length saved: " + tag.getInt("pulseLength"));
+        //tag.putInt("pulseLength", pulseLength);
+        //IDCards.LOGGER.info("Pulse length saved: " + tag.getInt("pulseLength"));
 
         if (customName != null) { tag.putString("customName", customName); }
     }
@@ -174,13 +174,13 @@ public class IdcardReaderBlockEntity extends BlockEntity implements MenuProvider
 
         isPowered = tag.getBoolean("powered");
 
-        pulseLength = tag.getInt("pulseLength");
-        IDCards.LOGGER.info("Getting value (0): " + tag.getInt("pulseLength"));
+        //pulseLength = tag.getInt("pulseLength");
+        //IDCards.LOGGER.info("Getting value (0): " + tag.getInt("pulseLength"));
 
         if (customName != null) { customName = tag.getString("customName"); }
     }
 
-    private final ContainerData dataAccess = new ContainerData() {
+    /*private final ContainerData dataAccess = new ContainerData() {
         @Override
         public int get(int index) {
             IDCards.LOGGER.info("Getting value (1): " + pulseLength);
@@ -201,6 +201,6 @@ public class IdcardReaderBlockEntity extends BlockEntity implements MenuProvider
 
     public ContainerData getDataAccess() {
         return dataAccess;
-    }
+    }/**/
 
 }

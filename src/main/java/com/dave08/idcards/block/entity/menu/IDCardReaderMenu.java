@@ -19,7 +19,7 @@ import net.minecraft.world.item.ItemStack;
 public class IDCardReaderMenu extends AbstractContainerMenu {
     private final Container container;
     private final IdcardReaderBlockEntity blockEntity;
-    private final ContainerData data;
+    //private final ContainerData data;
 
     public IDCardReaderMenu(int id, Inventory inv, FriendlyByteBuf buf) {
         this(id, inv, (IdcardReaderBlockEntity) inv.player.level().getBlockEntity(buf.readBlockPos()),
@@ -30,8 +30,8 @@ public class IDCardReaderMenu extends AbstractContainerMenu {
         super(ModMenus.ID_CARD_READER_MENU.get(), id);
         this.container = container;
         this.blockEntity = be;
-        this.data = blockEntity.getDataAccess();
-        addDataSlots(data);
+        //this.data = blockEntity.getDataAccess();
+        //addDataSlots(data);
 
         for (int i = 0; i < 6; ++i) {
             for (int j = 0; j < 9; ++j) {
@@ -73,9 +73,38 @@ public class IDCardReaderMenu extends AbstractContainerMenu {
     }
 
     @Override
-    public ItemStack quickMoveStack(Player player, int i)
-    {
-        return player.getInventory().getItem(1);
+    public ItemStack quickMoveStack(Player player, int index) {
+        ItemStack itemstack = ItemStack.EMPTY;
+        Slot slot = this.slots.get(index);
+
+        if (slot != null && slot.hasItem()) {
+            ItemStack stack = slot.getItem();
+            itemstack = stack.copy();
+
+            int containerSlots = this.container.getContainerSize(); // or the number of custom slots
+
+            if (index < containerSlots) {
+                // Shift-clicking from container to player inventory
+                if (!this.moveItemStackTo(stack, containerSlots, this.slots.size(), true)) {
+                    return ItemStack.EMPTY;
+                }
+            } else {
+                // Shift-clicking from player inventory to container
+                if (!this.moveItemStackTo(stack, 0, containerSlots, false)) {
+                    return ItemStack.EMPTY;
+                }
+            }
+
+            if (stack.isEmpty()) {
+                slot.set(ItemStack.EMPTY);
+            } else {
+                slot.setChanged();
+            }
+
+            slot.onTake(player, stack);
+        }
+
+        return itemstack;
     }
 
     @Override
@@ -83,10 +112,10 @@ public class IDCardReaderMenu extends AbstractContainerMenu {
         return true;
     }
 
-    public void setPulseLength(Integer newPulseLength) { blockEntity.setPulseLength(newPulseLength); }
+    //public void setPulseLength(Integer newPulseLength) { blockEntity.setPulseLength(newPulseLength); }
     
-    public int getPulseLength() {
+    /*public int getPulseLength() {
         IDCards.LOGGER.info("Getting value (2): " + data.get(0));
         return data.get(0);
-    }
+    }/**/
 }

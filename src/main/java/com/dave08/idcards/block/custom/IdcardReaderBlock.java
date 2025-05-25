@@ -1,7 +1,6 @@
 package com.dave08.idcards.block.custom;
 
-import com.dave08.idcards.Config;
-import com.dave08.idcards.IDCards;
+import com.dave08.idcards.ServerConfig;
 import com.dave08.idcards.block.entity.IdcardReaderBlockEntity;
 
 import net.minecraft.ChatFormatting;
@@ -32,7 +31,6 @@ import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.phys.BlockHitResult;
-import net.minecraftforge.common.Tags;
 import net.minecraftforge.network.NetworkHooks;
 
 import javax.annotation.Nullable;
@@ -68,8 +66,8 @@ public class IdcardReaderBlock extends Block implements EntityBlock {
             for (Direction dir : Direction.values()) {
                 level.updateNeighborsAt(pos.relative(dir), this);
             }
-            if (level.getBlockEntity(pos) instanceof IdcardReaderBlockEntity reader) {
-                level.scheduleTick(pos, this, reader.getPulseLength()); } else { level.scheduleTick(pos, this, 2); }
+            /*if (level.getBlockEntity(pos) instanceof IdcardReaderBlockEntity reader) {
+                level.scheduleTick(pos, this, reader.getPulseLength()); } else { */level.scheduleTick(pos, this, 2); //}
         }
     }
 
@@ -126,7 +124,7 @@ public class IdcardReaderBlock extends Block implements EntityBlock {
             if (player.isShiftKeyDown()) {
                 //Deny access to
                 if (be instanceof IdcardReaderBlockEntity reader) {
-                    if (!player.getUUID().equals(reader.getOwner()) && (!Config.allowTrustListToEdit || !reader.getStoredUUIDs().contains(player.getUUID()))) {
+                    if (!player.getUUID().equals(reader.getOwner()) && (!ServerConfig.allowTrustListToEdit || !reader.getStoredUUIDs().contains(player.getUUID()))) {
                         if (player instanceof ServerPlayer serverPlayer) {
                             serverPlayer.displayClientMessage(
                                 Component.translatable("block.idcards.idcard_reader.no_edit_trust_list").withStyle(ChatFormatting.DARK_RED),
@@ -140,7 +138,7 @@ public class IdcardReaderBlock extends Block implements EntityBlock {
                 if (provider != null && player instanceof ServerPlayer serverPlayer) {
                     //IDCards.LOGGER.info(ModMenus.ID_CARD_READER_MENU.get().toString());
                     NetworkHooks.openScreen(serverPlayer, provider, pos);
-                    if (Config.angerPiglinsOnOpenTrustList) { PiglinAi.angerNearbyPiglins(player, true); }
+                    if (ServerConfig.angerPiglinsOnOpenTrustList) { PiglinAi.angerNearbyPiglins(player, true); }
                 }
             } else {
                 ItemStack stack = player.getItemInHand(hand);
