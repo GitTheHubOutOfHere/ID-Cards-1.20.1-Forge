@@ -5,6 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dce26f5-3f00-42ae-8838-0b49df3a4bac" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/data/idcards/recipes/idcard_reader.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generated/resources/data/idcards/recipes/scanning_circuit.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/idcards/textures/gui/idcard_reader_menu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/idcards/textures/item/scanning_circuit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.8/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.8/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/checksums/md5-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.8/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/checksums/sha1-checksums.bin" afterDir="false" />
@@ -16,28 +22,57 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_05_2025_2_09_am__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/ID-Cards-1.20.1-Forge.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/ID-Cards-1.20.1-Forge.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/ID-Cards-1.20.1-Forge.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/ID-Cards-1.20.1-Forge.test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/Config.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/_RenameSrg2Mcp_-1398576414/log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/_RenameSrg2Mcp_-192516672/log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/_RenameSrg2Mcp_-2091703131/log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/_RenameSrg2Mcp_-601055606/log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/_RenameSrg2Mcp_-789466033/log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/_RenameSrg2Mcp_1074817309/log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/_applyBinpatches_2/log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/_compileJava_3/mcp/client/Start.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/IDCards$ClientModEvents.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/IDCards$ClientModEvents.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/IDCards.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/IDCards.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/ModNetworking.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/ModNetworking.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/block/custom/IdcardReaderBlock.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/block/custom/IdcardReaderBlock.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/block/entity/IdcardReaderBlockEntity$1.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/block/entity/IdcardReaderBlockEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/block/entity/IdcardReaderBlockEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/block/entity/menu/IDCardReaderMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/block/entity/menu/IDCardReaderMenu.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/client/screen/IDCardReaderScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/client/screen/IDCardReaderScreen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classpath/runClient_minecraftClasspath.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/classpath/runClient_minecraftClasspath.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/createMcpToSrg/output.tsrg" beforeDir="false" afterPath="$PROJECT_DIR$/build/createMcpToSrg/output.tsrg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/createSrgToMcp/output.srg" beforeDir="false" afterPath="$PROJECT_DIR$/build/createSrgToMcp/output.srg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/compat/JEIIDCardsPlugin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/datagen/ModItemModelProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/datagen/ModItemModelProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/datagen/ModRecipeProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/datagen/ModRecipeProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/idcardReaderPacket.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/idcardReaderPacket.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/item/ModItems.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/item/ModItems.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/item/ModTabs.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/item/ModTabs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/item/custom/coloredidcards/blackIdcardItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/item/custom/coloredidcards/blueIdcardItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/item/custom/coloredidcards/brownIdcardItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/item/custom/coloredidcards/cyanIdcardItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/item/custom/coloredidcards/grayIdcardItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/item/custom/coloredidcards/greenIdcardItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/item/custom/coloredidcards/lightBlueIdcardItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/item/custom/coloredidcards/lightGrayIdcardItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/item/custom/coloredidcards/limeIdcardItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/item/custom/coloredidcards/magentaIdcardItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/item/custom/coloredidcards/orangeIdcardItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/item/custom/coloredidcards/pinkIdcardItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/item/custom/coloredidcards/purpleIdcardItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/item/custom/coloredidcards/redIdcardItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/item/custom/coloredidcards/whiteIdcardItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/item/custom/coloredidcards/yellowIdcardItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/item/custom/idcardItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/item/custom/idcardItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classpath/runData_minecraftClasspath.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/classpath/runData_minecraftClasspath.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/downloadMCMeta/version.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/downloadMCMeta/version.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extractSrg/output.srg" beforeDir="false" afterPath="$PROJECT_DIR$/build/extractSrg/output.srg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/idcards-0.1.0-1.20.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/idcards-0.1.0-1.20.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/idcards-0.1.0-1.20.1.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reobfJar/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/reobfJar/log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reobfJar/mappings.tsrg" beforeDir="false" afterPath="$PROJECT_DIR$/build/reobfJar/mappings.tsrg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reobfJar/output.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/reobfJar/output.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/.cache/6b876f4fe9a2ce0d97cef9fd7ff52aa853fe3bf8" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/.cache/6b876f4fe9a2ce0d97cef9fd7ff52aa853fe3bf8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/.cache/9fb1092f32d4fcbf9e061ffd718d4ec689c6c95e" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/.cache/9fb1092f32d4fcbf9e061ffd718d4ec689c6c95e" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/META-INF/mods.toml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/META-INF/mods.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/assets/idcards/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/idcards/lang/en_us.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/idcards/textures/block/idcard_reader_front.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/idcards/textures/block/idcard_reader_front.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/idcards/textures/block/idcard_reader_side.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/idcards/textures/block/idcard_reader_side.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/idcards/textures/gui/IdcardReaderMenu.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/assets/idcards/textures/item/black_idcard.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/idcards/textures/item/black_idcard.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/assets/idcards/textures/item/blue_idcard.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/idcards/textures/item/blue_idcard.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/assets/idcards/textures/item/brown_idcard.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/idcards/textures/item/brown_idcard.png" afterDir="false" />
@@ -52,20 +87,54 @@
       <change beforePath="$PROJECT_DIR$/build/resources/main/assets/idcards/textures/item/pink_idcard.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/idcards/textures/item/pink_idcard.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/assets/idcards/textures/item/purple_idcard.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/idcards/textures/item/purple_idcard.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/assets/idcards/textures/item/red_idcard.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/idcards/textures/item/red_idcard.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/idcards/textures/item/white_idcard.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/idcards/textures/item/white_idcard.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/assets/idcards/textures/item/yellow_idcard.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/idcards/textures/item/yellow_idcard.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/pack.mcmeta" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/pack.mcmeta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/data/idcards/advancements/recipes/misc/white_idcard_from_sri.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/data/idcards/advancements/recipes/misc/white_idcard_from_sri.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run-data/logs/debug-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run-data/logs/debug-1.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run-data/logs/debug-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run-data/logs/debug-2.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run-data/logs/debug-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run-data/logs/debug-3.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run-data/logs/debug-4.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run-data/logs/debug-4.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run-data/logs/debug-5.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run-data/logs/debug-5.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run-data/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/run-data/logs/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/ServerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run-data/logs/latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/run-data/logs/latest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/.cache/6b876f4fe9a2ce0d97cef9fd7ff52aa853fe3bf8" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/.cache/6b876f4fe9a2ce0d97cef9fd7ff52aa853fe3bf8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/.cache/9fb1092f32d4fcbf9e061ffd718d4ec689c6c95e" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/.cache/9fb1092f32d4fcbf9e061ffd718d4ec689c6c95e" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/idcards/advancements/recipes/misc/white_idcard_from_sri.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/data/idcards/advancements/recipes/misc/white_idcard_from_sri.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/IDCards.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/IDCards.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/ModNetworking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/ModNetworking.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/ServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/ServerConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/block/custom/IdcardReaderBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/block/custom/IdcardReaderBlock.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/block/entity/IdcardReaderBlockEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/block/entity/IdcardReaderBlockEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/block/entity/menu/IDCardReaderMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/block/entity/menu/IDCardReaderMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/client/screen/IDCardReaderScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/client/screen/IDCardReaderScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/compat/JEIIDCardsPlugin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/datagen/ModItemModelProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/datagen/ModItemModelProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/datagen/ModRecipeProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/datagen/ModRecipeProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/idcardReaderPacket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/idcardReaderPacket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/item/ModItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/item/ModItems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/item/ModTabs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/item/ModTabs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/item/custom/coloredidcards/blackIdcardItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/item/custom/coloredidcards/blueIdcardItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/item/custom/coloredidcards/brownIdcardItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/item/custom/coloredidcards/cyanIdcardItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/item/custom/coloredidcards/grayIdcardItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/item/custom/coloredidcards/greenIdcardItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/item/custom/coloredidcards/lightBlueIdcardItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/item/custom/coloredidcards/lightGrayIdcardItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/item/custom/coloredidcards/limeIdcardItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/item/custom/coloredidcards/magentaIdcardItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/item/custom/coloredidcards/orangeIdcardItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/item/custom/coloredidcards/pinkIdcardItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/item/custom/coloredidcards/purpleIdcardItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/item/custom/coloredidcards/redIdcardItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/item/custom/coloredidcards/whiteIdcardItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/item/custom/coloredidcards/yellowIdcardItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/item/custom/idcardItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/item/custom/idcardItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/mods.toml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/mods.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/assets/idcards/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/idcards/lang/en_us.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/idcards/textures/block/idcard_reader_front.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/idcards/textures/block/idcard_reader_front.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/idcards/textures/block/idcard_reader_side.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/idcards/textures/block/idcard_reader_side.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/idcards/textures/gui/IdcardReaderMenu.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/assets/idcards/textures/item/black_idcard.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/idcards/textures/item/black_idcard.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/assets/idcards/textures/item/blue_idcard.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/idcards/textures/item/blue_idcard.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/assets/idcards/textures/item/brown_idcard.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/idcards/textures/item/brown_idcard.png" afterDir="false" />
@@ -80,7 +149,6 @@
       <change beforePath="$PROJECT_DIR$/src/main/resources/assets/idcards/textures/item/pink_idcard.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/idcards/textures/item/pink_idcard.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/assets/idcards/textures/item/purple_idcard.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/idcards/textures/item/purple_idcard.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/assets/idcards/textures/item/red_idcard.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/idcards/textures/item/red_idcard.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/idcards/textures/item/white_idcard.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/idcards/textures/item/white_idcard.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/assets/idcards/textures/item/yellow_idcard.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/idcards/textures/item/yellow_idcard.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -171,6 +239,7 @@
     &quot;Gradle.ID Cards 1.20.1 Forge [build].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.ID Cards 1.20.1 Forge [clean].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.ID Cards 1.20.1 Forge [runClient].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ID-Cards-1.20.1-Forge [clean].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.ID-Cards-1.20.1-Forge [createMcpToSrg].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.ID-Cards-1.20.1-Forge [runData].executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
@@ -179,6 +248,9 @@
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/David V/Documents/Download/ID-Cards-1.20.1-Forge/src/main/resources/data/idcards/recipes&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.customizations&quot;
   }
 }</component>
@@ -187,6 +259,10 @@
       <recent name="C:\Users\David V\Documents\Download\ID-Cards-1.20.1-Forge\src\main\resources\data\idcards\recipes" />
       <recent name="C:\Users\David V\Documents\Download\ID-Cards-1.20.1-Forge\src\main\resources\assets\idcards\textures\item" />
       <recent name="C:\Users\David V\Documents\Download\ID-Cards-1.20.1-Forge\src\main\resources\assets\idcards\textures\block" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Overflow\Temp files\Mods\ID-Cards-1.20.1-Forge\src\main\resources\assets\idcards\textures\item" />
+      <recent name="C:\Overflow\Temp files\Mods\ID-Cards-1.20.1-Forge\src\main\resources\assets\idcards\textures\item\id cards" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.dave08.idcards" />
@@ -283,17 +359,17 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Gradle.ID-Cards-1.20.1-Forge [clean]" />
       <item itemvalue="Gradle.ID Cards 1.20.1 Forge [build]" />
       <item itemvalue="Gradle.ID Cards 1.20.1 Forge [runClient]" />
+      <item itemvalue="Gradle.ID-Cards-1.20.1-Forge [clean]" />
       <item itemvalue="Gradle.ID-Cards-1.20.1-Forge [runData]" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.ID Cards 1.20.1 Forge [build]" />
         <item itemvalue="Gradle.ID Cards 1.20.1 Forge [runClient]" />
-        <item itemvalue="Gradle.ID-Cards-1.20.1-Forge [clean]" />
         <item itemvalue="Gradle.ID-Cards-1.20.1-Forge [runData]" />
+        <item itemvalue="Gradle.ID-Cards-1.20.1-Forge [clean]" />
       </list>
     </recent_temporary>
   </component>
@@ -442,7 +518,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746333439281</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Pulse length editor pushed aside, config made server-only, idcards now have permanent texture.">
+      <option name="closed" value="true" />
+      <created>1748152262263</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1748152262263</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -482,6 +566,7 @@
     <MESSAGE value="ID Card now comes in colours" />
     <MESSAGE value="White idcard item's ink sac, redstone dust, iron nugget recipe is now made from datagen. Started JEI integration." />
     <MESSAGE value="Updated gitignore to exclude test world files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated gitignore to exclude test world files" />
+    <MESSAGE value="Pulse length editor pushed aside, config made server-only, idcards now have permanent texture." />
+    <option name="LAST_COMMIT_MESSAGE" value="Pulse length editor pushed aside, config made server-only, idcards now have permanent texture." />
   </component>
 </project>

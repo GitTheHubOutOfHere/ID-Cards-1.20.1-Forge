@@ -1,5 +1,6 @@
 package com.dave08.idcards.item.custom;
 
+import com.dave08.idcards.ClientConfig;
 import com.dave08.idcards.IDCards;
 import com.dave08.idcards.block.ModBlocks;
 import net.minecraft.ChatFormatting;
@@ -11,6 +12,7 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
@@ -28,7 +30,9 @@ import java.util.UUID;
 
 public class idcardItem extends Item
 {
-    public idcardItem(Properties pProperties) { super(pProperties); }
+    private final DyeColor color;
+
+    public idcardItem(DyeColor color, Properties pProperties) { super(pProperties); this.color = color; }
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level pLevel, Player pPlayer, InteractionHand pUsedHand)
@@ -42,8 +46,7 @@ public class idcardItem extends Item
             if (!storedUuid.equals(pPlayer.getUUID()))
             {
                 if (!pLevel.isClientSide) {
-                    pPlayer.displayClientMessage(Component.translatable("item.idcards.idcard.actionBarMessage.NotOwner")
-                            .withStyle(ChatFormatting.RED), true);
+                    pPlayer.displayClientMessage(Component.translatable("item.idcards.idcard.actionBarMessage.NotOwner"), true);
                 }
                 return InteractionResultHolder.sidedSuccess(stack, pLevel.isClientSide);
             }
@@ -52,8 +55,7 @@ public class idcardItem extends Item
             if (!pPlayer.isCrouching())
             {
                 if (!pLevel.isClientSide) {
-                    pPlayer.displayClientMessage(Component.translatable("item.idcards.idcard.actionBarMessage.AlreadyLinked")
-                            .withStyle(ChatFormatting.WHITE), true);
+                    pPlayer.displayClientMessage(Component.translatable("item.idcards.idcard.actionBarMessage.AlreadyLinked"), true);
                 }
                 return InteractionResultHolder.sidedSuccess(stack, pLevel.isClientSide);
             }
@@ -61,13 +63,12 @@ public class idcardItem extends Item
             // Player is the owner — clear the data
             stack.setTag(null); // or stack.removeTagKey("OwnerUUID"); + remove other keys individually
             if (!pLevel.isClientSide) {
-                pPlayer.displayClientMessage(Component.translatable("item.idcards.idcard.actionBarMessage.Unlinked")
-                        .withStyle(ChatFormatting.RED), true);
+                pPlayer.displayClientMessage(Component.translatable("item.idcards.idcard.actionBarMessage.Unlinked"), true);
             }
             return InteractionResultHolder.sidedSuccess(stack, pLevel.isClientSide);
         }
 
-        // Else: set ownership
+        // Set ownership
         tag.putUUID("OwnerUUID", pPlayer.getUUID());
         tag.putString("OwnerName", pPlayer.getName().getString());
         stack.setTag(tag);
@@ -75,17 +76,18 @@ public class idcardItem extends Item
         if (!pLevel.isClientSide())
         {
             pPlayer.displayClientMessage(Component.translatable("item.idcards.idcard.actionBarMessage.Linked",
-                    pPlayer.getName().getString()).withStyle(ChatFormatting.GREEN), true);
+                    pPlayer.getName().getString()), true);
         }
 
         return InteractionResultHolder.success(pPlayer.getItemInHand(pUsedHand));
     }
 
+    // Put the hover text in...
     @Override
     @OnlyIn(Dist.CLIENT)
     public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> tooltip, TooltipFlag flag) {
         tooltip.add(Component.translatable("item.idcards.idcard.tooltip.base1"));
-        tooltip.add(Component.literal(""));
+        /*tooltip.add(Component.literal(""));
         tooltip.add(Component.literal("[Ctrl] for controls"));
 
         // Show controls when control key is pressed
@@ -93,7 +95,7 @@ public class idcardItem extends Item
         {
             tooltip.add(Component.translatable("item.idcards.idcard.tooltip.base2"));
             tooltip.add(Component.translatable("item.idcards.idcard.tooltip.base3"));
-        }
+        }/**/
 
         if (stack.hasTag() && stack.getTag().contains("OwnerName", Tag.TAG_STRING))
         {

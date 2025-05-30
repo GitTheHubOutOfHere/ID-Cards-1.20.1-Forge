@@ -121,13 +121,13 @@ public class IdcardReaderBlock extends Block implements EntityBlock {
             //IDCards.LOGGER.info("Held item NBT: {}", player.getItemInHand(hand).getTag().get("OwnerUUID"));
             if (!(be instanceof IdcardReaderBlockEntity blockEntity)) return InteractionResult.FAIL;
 
-            if (player.isShiftKeyDown()) {
-                //Deny access to
+            if (hit.getDirection() == ServerConfig.getTriggerFace()) {
+                //Deny access to just anyone
                 if (be instanceof IdcardReaderBlockEntity reader) {
                     if (!player.getUUID().equals(reader.getOwner()) && (!ServerConfig.allowTrustListToEdit || !reader.getStoredUUIDs().contains(player.getUUID()))) {
                         if (player instanceof ServerPlayer serverPlayer) {
                             serverPlayer.displayClientMessage(
-                                Component.translatable("block.idcards.idcard_reader.no_edit_trust_list").withStyle(ChatFormatting.DARK_RED),
+                                Component.translatable("block.idcards.idcard_reader.no_edit_trust_list"),
                                 true);
                         }
                         return InteractionResult.SUCCESS;
@@ -151,13 +151,13 @@ public class IdcardReaderBlock extends Block implements EntityBlock {
                         if (player.getUUID().equals(reader.getOwner()) || reader.getStoredUUIDs().contains(uuid)) {
                             if (player instanceof ServerPlayer serverPlayer) {
                                 serverPlayer.displayClientMessage(
-                                        Component.literal("Access Granted"/* + reader.getStoredUUIDs() + uuid/**/).withStyle(ChatFormatting.DARK_GREEN), true);
+                                        Component.literal("Access Granted"/* + reader.getStoredUUIDs() + uuid/**/), true);
                             }
                             emitRedstonePulse(state, level, pos);
                         } else {
                             if (player instanceof ServerPlayer serverPlayer) {
                                 serverPlayer.displayClientMessage(
-                                        Component.literal("Access Denied"/* + reader.getStoredUUIDs() + uuid/**/).withStyle(ChatFormatting.DARK_RED), true);
+                                        Component.literal("Access Denied"/* + reader.getStoredUUIDs() + uuid/**/), true);
                             }
                         }
                         //IDCards.LOGGER.info("Stored UUIDs:", reader.getStoredUUIDs(), uuid);
@@ -165,7 +165,7 @@ public class IdcardReaderBlock extends Block implements EntityBlock {
                 } else /*if (!stack.isEmpty() && stack.getItem().getDescriptionId().equals("item.idcards.idcard"))/**/ {
                     if (player instanceof ServerPlayer serverPlayer) {
                         serverPlayer.displayClientMessage(
-                                Component.translatable("block.idcards.idcard_reader.not_valid_id_card").withStyle(ChatFormatting.GOLD), true);
+                                Component.translatable("block.idcards.idcard_reader.not_valid_id_card"), true);
                     }
                 }
             }

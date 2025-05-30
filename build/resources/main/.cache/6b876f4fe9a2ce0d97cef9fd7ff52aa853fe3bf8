@@ -1,4 +1,4 @@
-// 1.20.1	2025-05-03T14:00:33.5212874	Item Models: idcards
+// 1.20.1	2025-05-25T22:21:20.0086551	Item Models: idcards
 c290e53c752ae7ba79be5c42569b88a9ea9b0b14 assets/idcards/models/item/black_idcard.json
 05a9b2b42dcb3eaecd5c59aadf11989d99c5d62f assets/idcards/models/item/blue_idcard.json
 4188e55503460461930712c0c38a2a8d1376dfcf assets/idcards/models/item/brown_idcard.json
@@ -13,5 +13,6 @@ a6e3e832c1b58e167c42d37d6f9587b187ae84f2 assets/idcards/models/item/magenta_idca
 527559dfcb0315a5aec4ad8e41f881598b3d965a assets/idcards/models/item/pink_idcard.json
 21c5be4b348f7526096e6f011b9ddba9096b261b assets/idcards/models/item/purple_idcard.json
 0de91b25756ecc62001de8dc249a3ab6bf5af7b6 assets/idcards/models/item/red_idcard.json
+64f6bf51d355a83982d8c1769442fcba7ea507ed assets/idcards/models/item/scanning_circuit.json
 e7d2ce85da192b91a2385c8bf95d284cff65f91a assets/idcards/models/item/white_idcard.json
 2b6faf14f74bf9562fa5733f0a00203e1628dea9 assets/idcards/models/item/yellow_idcard.json

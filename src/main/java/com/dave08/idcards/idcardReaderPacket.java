@@ -36,10 +36,9 @@ public class idcardReaderPacket {
             ServerLevel level = player.serverLevel();
             BlockEntity be = level.getBlockEntity(msg.pos);
             if (be instanceof IdcardReaderBlockEntity reader) {
-                reader.setPulseLength(msg.pulseLength);
+                //reader.setPulseLength(msg.pulseLength);
             }
         });
         ctx.get().setPacketHandled(true);
     }
 }
-

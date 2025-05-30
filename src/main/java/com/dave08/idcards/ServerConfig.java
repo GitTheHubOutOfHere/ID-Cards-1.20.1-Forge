@@ -1,5 +1,6 @@
 package com.dave08.idcards;
 
+import net.minecraft.core.Direction;
 import net.minecraftforge.common.ForgeConfigSpec;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -19,6 +20,10 @@ public class ServerConfig
     private static final ForgeConfigSpec.BooleanValue OPEN_TRUST_LIST_ANGERS_PIGLINS = BUILDER
             .comment("Whether to anger nearby piglins when you open an ID Card Reader's trust list menu, they also don't like people stealing *cough* their IDs")
             .define("angerPiglinsOnOpenTrustList", false);
+
+    private static final ForgeConfigSpec.ConfigValue<String> TRIGGER_FACE = BUILDER
+            .comment("Which face of the block should trigger the action. Allowed: UP, DOWN, NORTH, SOUTH, EAST, WEST")
+            .define("triggerFace", "UP");
 
     /*private static final ForgeConfigSpec.IntValue MAGIC_NUMBER = BUILDER
             .comment("A magic number")
@@ -45,6 +50,13 @@ public class ServerConfig
     {
         return obj instanceof final String itemName && ForgeRegistries.ITEMS.containsKey(new ResourceLocation(itemName));
     }/**/
+    public static Direction getTriggerFace() {
+        try {
+            return Direction.valueOf(TRIGGER_FACE.get().toUpperCase());
+        } catch (IllegalArgumentException e) {
+            return Direction.UP; // Fallback default
+        }
+    }
 
     @SubscribeEvent
     static void onLoad(final ModConfigEvent event)

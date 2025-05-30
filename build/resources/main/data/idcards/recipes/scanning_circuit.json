@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "pattern": [
+    "   ",
+    " R ",
+    " I "
+  ],
+  "result": {
+    "item": "idcards:scanning_circuit"
+  },
+  "show_notification": true
+}

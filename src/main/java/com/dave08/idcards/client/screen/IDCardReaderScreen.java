@@ -13,7 +13,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Inventory;
 
 public class IDCardReaderScreen extends AbstractContainerScreen<IDCardReaderMenu> {
-    private static final ResourceLocation TEXTURE = new ResourceLocation("idcards", "textures/gui/generic_54.png");
+    private static final ResourceLocation TEXTURE = new ResourceLocation("idcards", "textures/gui/idcard_reader_menu.png");
     //private EditBox pulseLengthBox;
     private IDCardReaderMenu guiMenu;
 
@@ -62,11 +62,11 @@ public class IDCardReaderScreen extends AbstractContainerScreen<IDCardReaderMenu
     @Override
     protected void renderBg(GuiGraphics guiGraphics, float partialTick, int mouseX, int mouseY) {
         RenderSystem.setShaderTexture(0, TEXTURE);
+
         int x = (this.width - this.imageWidth) / 2;
         int y = (this.height - this.imageHeight) / 2;
-
         guiGraphics.blit(TEXTURE, x, y, 0, 0, this.imageWidth, 6 * 18 + 17); // main
-        guiGraphics.blit(TEXTURE, x, y + 6 * 18 + 17, 0, 126, this.imageWidth, 96); // player inv
+        guiGraphics.blit(TEXTURE, x, y + 6 * 18 + 17, 0, 126, this.imageWidth, 96); /* player inv*/
     }
 
     @Override

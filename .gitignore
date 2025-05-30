@@ -1,3 +1,5 @@
 /build/_atJar_4/
 /build/tmp/
 /run/
+/run-data/
+/.gradle/

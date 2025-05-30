@@ -24,6 +24,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,39 +34,28 @@ public class IdcardReaderBlockEntity extends BlockEntity implements MenuProvider
     private final Container container = new SimpleContainer(54);
     private boolean isPowered = false;
     private String customName;
-    private int pulseLength;
+    //private int pulseLength;
 
-    public Container getContainer() {
-        return container;
-    }
+    public Container getContainer() { return container; }
 
     private final List<UUID> storedUUIDs = new ArrayList<>();
 
     private UUID owner = new UUID(0L, 0L);
 
-    public IdcardReaderBlockEntity(BlockPos pos, BlockState state) {
-        super(ModBlockEntities.IDCARD_READER_BE.get(), pos, state);
-    }
+    public IdcardReaderBlockEntity(BlockPos pos, BlockState state) { super(ModBlockEntities.IDCARD_READER_BE.get(), pos, state); }
 
     public void setCustomName(String name) { customName = name; }
 
-    public void setPulseLength(Integer newPulseLength) {
+    /*public void setPulseLength(Integer newPulseLength) {
         pulseLength = newPulseLength;
         setChanged();
         IDCards.LOGGER.info("Called setPulseLength() on: " + (level != null && level.isClientSide ? "CLIENT" : "SERVER")); }
-    public int getPulseLength() { return pulseLength; }
+    public int getPulseLength() { return pulseLength; }/**/
 
     @Override
-    public Component getDisplayName() {
-        return customName == null ? Component.translatable("block.idcards.idcard_reader") : Component.literal(customName + " trust list");
-    }
+    public @NotNull Component getDisplayName() { return customName == null ? Component.translatable("block.idcards.idcard_reader") : Component.literal(customName + " trust list"); }
 
     public boolean getPowered() { return isPowered; }
-
-    public void setPowered(Boolean powered) {
-        this.isPowered = powered;
-        setChanged();
-    }
 
     @Override
     public AbstractContainerMenu createMenu(int id, Inventory inv, Player player) {
@@ -91,15 +81,13 @@ public class IdcardReaderBlockEntity extends BlockEntity implements MenuProvider
         setChanged();
     }
 
-    public List<UUID> getStoredUUIDs() {
-        return storedUUIDs;
-    }
+    public List<UUID> getStoredUUIDs() { return storedUUIDs; }
 
-    public UUID getOwner() {return owner;}
+    public UUID getOwner() { return owner; }
 
-    public void setOwner(UUID newOwner) {owner = newOwner;}
+    public void setOwner(UUID newOwner) { owner = newOwner; } //
 
-    public void emitRedstoneSignal() {
+    private void emitRedstoneSignal() {
         Level world = this.level;
         BlockPos pos = this.getBlockPos();
 
@@ -202,5 +190,4 @@ public class IdcardReaderBlockEntity extends BlockEntity implements MenuProvider
     public ContainerData getDataAccess() {
         return dataAccess;
     }/**/
-
 }
