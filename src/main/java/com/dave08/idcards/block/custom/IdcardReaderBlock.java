@@ -148,7 +148,7 @@ public class IdcardReaderBlock extends Block implements EntityBlock {
                     //IDCards.LOGGER.info("Scanned ownerUUID: " + stack.getTag().getUUID("OwnerUUID").toString());
                     UUID uuid = stack.getTag().getUUID("OwnerUUID");
                     if (be instanceof IdcardReaderBlockEntity reader) {
-                        if (player.getUUID().equals(reader.getOwner()) || reader.getStoredUUIDs().contains(uuid)) {
+                        if (uuid.equals(reader.getOwner()) || reader.getStoredUUIDs().contains(uuid)) {
                             if (player instanceof ServerPlayer serverPlayer) {
                                 serverPlayer.displayClientMessage(
                                         Component.literal("Access Granted"/* + reader.getStoredUUIDs() + uuid/**/), true);

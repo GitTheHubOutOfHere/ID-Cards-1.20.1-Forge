@@ -22,7 +22,7 @@ public class ModBlocks
             DeferredRegister.create(ForgeRegistries.BLOCKS, IDCards.MOD_ID);
 
     public static final RegistryObject<Block> IDCARD_READER = registerBlock("idcard_reader",
-            () -> new IdcardReaderBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
+            () -> new IdcardReaderBlock(BlockBehaviour.Properties.copy(Blocks.BIRCH_PLANKS).noOcclusion()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
