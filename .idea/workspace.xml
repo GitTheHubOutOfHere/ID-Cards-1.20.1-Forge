@@ -5,29 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dce26f5-3f00-42ae-8838-0b49df3a4bac" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/generated/resources/data/idcards/loot_tables/blocks/idcard_reader.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/datagen/ModBlockLootTables.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/datagen/ModLootTableProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.8/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.8/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/block/ModBlocks.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/block/ModBlocks.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/block/custom/IdcardReaderBlock.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/block/custom/IdcardReaderBlock.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/datagen/DataGenerators.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dave08/idcards/datagen/DataGenerators.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/idcards-0.5.32-1.20.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/idcards-0.5.35-1.20.1.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reobfJar/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/reobfJar/log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reobfJar/output.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/reobfJar/output.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/META-INF/mods.toml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/META-INF/mods.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/idcards/textures/block/idcard_reader_front.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/idcards/textures/block/idcard_reader_front.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/data/idcards/advancements/recipes/misc/scanning_circuit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/data/idcards/recipes/idcard_reader.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/data/idcards/recipes/idcard_reader.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run-data/logs/debug-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run-data/logs/debug-1.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run-data/logs/debug-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run-data/logs/debug-2.log.gz" afterDir="false" />
@@ -36,10 +21,19 @@
       <change beforePath="$PROJECT_DIR$/run-data/logs/debug-5.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run-data/logs/debug-5.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run-data/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/run-data/logs/debug.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run-data/logs/latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/run-data/logs/latest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/block/ModBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/block/ModBlocks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/.cache/6b876f4fe9a2ce0d97cef9fd7ff52aa853fe3bf8" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/.cache/6b876f4fe9a2ce0d97cef9fd7ff52aa853fe3bf8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/.cache/9fb1092f32d4fcbf9e061ffd718d4ec689c6c95e" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/.cache/9fb1092f32d4fcbf9e061ffd718d4ec689c6c95e" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/idcards/models/item/scanning_circuit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/idcards/advancements/recipes/misc/idcard_reader.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/data/idcards/advancements/recipes/misc/idcard_reader.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/idcards/advancements/recipes/misc/scanning_circuit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/idcards/recipes/idcard_reader.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/data/idcards/recipes/idcard_reader.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/idcards/recipes/scanning_circuit.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/block/custom/IdcardReaderBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/block/custom/IdcardReaderBlock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/datagen/DataGenerators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/datagen/DataGenerators.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/idcards/textures/block/idcard_reader_front.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/idcards/textures/block/idcard_reader_front.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/datagen/ModBlockLootTables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/datagen/ModBlockLootTables.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/datagen/ModItemModelProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/datagen/ModItemModelProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/datagen/ModRecipeProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/datagen/ModRecipeProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/item/ModItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/item/ModItems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/item/ModTabs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dave08/idcards/item/ModTabs.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +135,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.customizations&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -257,8 +251,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.ID Cards 1.20.1 Forge [build]" />
-        <item itemvalue="Gradle.ID Cards 1.20.1 Forge [runClient]" />
         <item itemvalue="Gradle.ID-Cards-1.20.1-Forge [runData]" />
+        <item itemvalue="Gradle.ID Cards 1.20.1 Forge [runClient]" />
         <item itemvalue="Gradle.ID-Cards-1.20.1-Forge [clean]" />
       </list>
     </recent_temporary>
@@ -424,7 +418,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748617664716</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Painting ID Card readers">
+      <option name="closed" value="true" />
+      <created>1748817124585</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1748817124585</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -466,6 +468,7 @@
     <MESSAGE value="Updated gitignore to exclude test world files" />
     <MESSAGE value="Pulse length editor pushed aside, config made server-only, idcards now have permanent texture." />
     <MESSAGE value="Tinkering with the construct...&#10;- Id cards now generated at runtime&#10;- All textures (except scanning circuit) are in" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tinkering with the construct...&#10;- Id cards now generated at runtime&#10;- All textures (except scanning circuit) are in" />
+    <MESSAGE value="Painting ID Card readers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Painting ID Card readers" />
   </component>
 </project>

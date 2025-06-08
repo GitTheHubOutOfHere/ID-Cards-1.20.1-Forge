@@ -114,22 +114,22 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_iron_nugget", has(Items.IRON_NUGGET))
                 .save(pWriter, new ResourceLocation("idcards", "white_idcard_from_sri"));
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SCANNING_CIRCUIT.get())
+        /*ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SCANNING_CIRCUIT.get())
                 .pattern("   ")
                 .pattern(" R ")
                 .pattern(" I ")
                 .define('I', Items.IRON_INGOT)
                 .define('R', Items.REDSTONE)
                 .unlockedBy("has_redstone", has(Items.REDSTONE))
-                .save(pWriter);
+                .save(pWriter);/**/
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.IDCARD_READER.get())
                 .pattern(" I ")
-                .pattern("ICI")
+                .pattern("IRI")
                 .pattern(" I ")
                 .define('I', Items.IRON_INGOT)
-                .define('C', ModItems.SCANNING_CIRCUIT.get())
-                .unlockedBy("has_scanning_circut", has(ModItems.SCANNING_CIRCUIT.get()))
+                .define('R', Items.REDSTONE)
+                .unlockedBy("has_redstone", has(Items.REDSTONE))
                 .save(pWriter);
     } // .save(pWriter, new ResourceLocation("{mod_id}", "{desired_recipe_name}")); will set the recipe name to {desired_recipe_name} for items  with multiple recipes
 }

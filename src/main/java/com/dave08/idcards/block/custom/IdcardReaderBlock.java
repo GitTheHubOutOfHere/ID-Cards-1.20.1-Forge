@@ -12,9 +12,7 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.util.RandomSource;
-import net.minecraft.world.InteractionHand;
-import net.minecraft.world.InteractionResult;
-import net.minecraft.world.MenuProvider;
+import net.minecraft.world.*;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.monster.piglin.PiglinAi;
 import net.minecraft.world.entity.player.Player;
@@ -46,7 +44,6 @@ public class IdcardReaderBlock extends Block implements EntityBlock {
         this.registerDefaultState(this.stateDefinition.any()
                 .setValue(POWERED, false)
                 .setValue(FACING, Direction.NORTH));
-        //IDCards.LOGGER.info("1");
     }
 
     @Override
@@ -71,7 +68,19 @@ public class IdcardReaderBlock extends Block implements EntityBlock {
         }
     }
 
-    // Handling the redstone pulse after 1 tick
+    @Override
+    public void onRemove(BlockState pState, Level pLevel, BlockPos pPos, BlockState pNewState, boolean pIsMoving) {
+        if (!pState.is(pNewState.getBlock())) {
+            BlockEntity blockentity = pLevel.getBlockEntity(pPos);
+            if (blockentity instanceof IdcardReaderBlockEntity) {
+                Containers.dropContents(pLevel, pPos, ((IdcardReaderBlockEntity) blockentity).getContainer());
+                pLevel.updateNeighbourForOutputSignal(pPos, this);
+            }
+
+            super.onRemove(pState, pLevel, pPos, pNewState, pIsMoving);
+        }
+    }
+
     @SuppressWarnings("deprication")
     @Override
     public void tick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
@@ -87,9 +96,7 @@ public class IdcardReaderBlock extends Block implements EntityBlock {
 
     @SuppressWarnings("deprication")
     @Override
-    public boolean isSignalSource(BlockState state) {
-        return true; // This means this block will emit a redstone signal
-    }
+    public boolean isSignalSource(BlockState state) { return true;}
 
     @SuppressWarnings("deprication")
     @Override
@@ -107,7 +114,7 @@ public class IdcardReaderBlock extends Block implements EntityBlock {
     public void setPlacedBy(Level level, BlockPos pos, BlockState state, @Nullable LivingEntity placer, ItemStack stack) {
         super.setPlacedBy(level, pos, state, placer, stack);
         if (level.getBlockEntity(pos) instanceof IdcardReaderBlockEntity reader) {
-            reader.setOwner(placer.getUUID());/**/
+            reader.setOwner(placer.getUUID());
             if (stack.hasCustomHoverName()) { reader.setCustomName(stack.getHoverName().getString()); }
         }
     }
@@ -116,9 +123,7 @@ public class IdcardReaderBlock extends Block implements EntityBlock {
     @SuppressWarnings("deprication")
     public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
         if (!level.isClientSide) {
-            //IDCards.LOGGER.info("2");
             var be = level.getBlockEntity(pos);
-            //IDCards.LOGGER.info("Held item NBT: {}", player.getItemInHand(hand).getTag().get("OwnerUUID"));
             if (!(be instanceof IdcardReaderBlockEntity blockEntity)) return InteractionResult.FAIL;
 
             if (hit.getDirection() == ServerConfig.getTriggerFace()) {
@@ -136,33 +141,29 @@ public class IdcardReaderBlock extends Block implements EntityBlock {
 
                 MenuProvider provider = state.getMenuProvider(level, pos);
                 if (provider != null && player instanceof ServerPlayer serverPlayer) {
-                    //IDCards.LOGGER.info(ModMenus.ID_CARD_READER_MENU.get().toString());
                     NetworkHooks.openScreen(serverPlayer, provider, pos);
                     if (ServerConfig.angerPiglinsOnOpenTrustList) { PiglinAi.angerNearbyPiglins(player, true); }
                 }
             } else {
                 ItemStack stack = player.getItemInHand(hand);
-                //IDCards.LOGGER.info("4");
                 if (!stack.isEmpty() && stack.is(ItemTags.create(new ResourceLocation("idcards", "idcards"))) &&
                         stack.hasTag() && stack.getTag().contains("OwnerUUID")) {
-                    //IDCards.LOGGER.info("Scanned ownerUUID: " + stack.getTag().getUUID("OwnerUUID").toString());
                     UUID uuid = stack.getTag().getUUID("OwnerUUID");
                     if (be instanceof IdcardReaderBlockEntity reader) {
                         if (uuid.equals(reader.getOwner()) || reader.getStoredUUIDs().contains(uuid)) {
                             if (player instanceof ServerPlayer serverPlayer) {
                                 serverPlayer.displayClientMessage(
-                                        Component.literal("Access Granted"/* + reader.getStoredUUIDs() + uuid/**/), true);
+                                        Component.literal("Access Granted"), true);
                             }
                             emitRedstonePulse(state, level, pos);
                         } else {
                             if (player instanceof ServerPlayer serverPlayer) {
                                 serverPlayer.displayClientMessage(
-                                        Component.literal("Access Denied"/* + reader.getStoredUUIDs() + uuid/**/), true);
+                                        Component.literal("Access Denied"), true);
                             }
                         }
-                        //IDCards.LOGGER.info("Stored UUIDs:", reader.getStoredUUIDs(), uuid);
                     }
-                } else /*if (!stack.isEmpty() && stack.getItem().getDescriptionId().equals("item.idcards.idcard"))/**/ {
+                } else {
                     if (player instanceof ServerPlayer serverPlayer) {
                         serverPlayer.displayClientMessage(
                                 Component.translatable("block.idcards.idcard_reader.not_valid_id_card"), true);

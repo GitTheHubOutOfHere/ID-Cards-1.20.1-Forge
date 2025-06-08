@@ -23,7 +23,7 @@ public class ModTabs
                     .displayItems((itemDisplayParameters, output) -> {
                         // The ID CARD STACK! *still pretty fake scream*
                         output.accept(ModBlocks.IDCARD_READER.get());
-                        output.accept(ModItems.SCANNING_CIRCUIT.get());
+                        //output.accept(ModItems.SCANNING_CIRCUIT.get());
                         output.accept(ModItems.IDCARDS.get(DyeColor.BLACK).get());
                         output.accept(ModItems.IDCARDS.get(DyeColor.BLUE).get());
                         output.accept(ModItems.IDCARDS.get(DyeColor.BROWN).get());

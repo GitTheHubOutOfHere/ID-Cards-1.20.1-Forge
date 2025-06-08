@@ -1,11 +1,11 @@
-// 1.20.1	2025-05-25T22:21:20.0086551	Recipes
+// 1.20.1	2025-06-09T01:55:00.5858823	Recipes
 c9d74a322591c57f377800da99c31f646fa0354d data/idcards/advancements/recipes/misc/black_idcard.json
 6c1a35a9cf471617270f083ecea655013e96ad1e data/idcards/advancements/recipes/misc/blue_idcard.json
 2f098c614ea2bd3a7277bb03b0f7e992cf3ac6b3 data/idcards/advancements/recipes/misc/brown_idcard.json
 03096fbdbf579f7a1911218eba662fec2a1956cf data/idcards/advancements/recipes/misc/cyan_idcard.json
 2e5469052116e856cfab9b996bde0f5f29af2b48 data/idcards/advancements/recipes/misc/gray_idcard.json
 243fa7a96c7a479e4372812b0a4bb3e680b2139b data/idcards/advancements/recipes/misc/green_idcard.json
-92a3c31df6e094a5313eab77bc8aee84672c790d data/idcards/advancements/recipes/misc/idcard_reader.json
+f81696f530ff34a35f25465b934117f7d38d2396 data/idcards/advancements/recipes/misc/idcard_reader.json
 50e37ab349012c08f8350ec530b7dcf45aa6c5b9 data/idcards/advancements/recipes/misc/light_blue_idcard.json
 f4ac3104fb8786aec36a31c6b351cb25cc9e4447 data/idcards/advancements/recipes/misc/light_gray_idcard.json
 00e24b46450b930b323be94599541066133f7b9e data/idcards/advancements/recipes/misc/lime_idcard.json
@@ -14,7 +14,6 @@ c9e3ad8ab9b99f91755029b226423f272ca82e0d data/idcards/advancements/recipes/misc/
 965bde0bf253b63a95b4286fdf93fbe2d2c01ea4 data/idcards/advancements/recipes/misc/pink_idcard.json
 29c05ddef6693400fcb4d4b2be6281f2768fef61 data/idcards/advancements/recipes/misc/purple_idcard.json
 cba325ab34accfddb30958289817ea5844194a11 data/idcards/advancements/recipes/misc/red_idcard.json
-a6ea57f7b03b7db9bbef05c2b114b3986649b421 data/idcards/advancements/recipes/misc/scanning_circuit.json
 1d197195f9e7d7f09810fd66e3b05f337558f4c8 data/idcards/advancements/recipes/misc/white_idcard.json
 48aebbf922d95ee5f8c6959decbdfaa6b5be8680 data/idcards/advancements/recipes/misc/white_idcard_from_sri.json
 aaf411d4d001b9b3333001b81e8027dae3c61856 data/idcards/advancements/recipes/misc/yellow_idcard.json
@@ -24,7 +23,7 @@ aaf411d4d001b9b3333001b81e8027dae3c61856 data/idcards/advancements/recipes/misc/
 4bd1626296a303b1c3da3840df138d9811365f28 data/idcards/recipes/cyan_idcard.json
 a83a84f30004fa1376726b0e5663a5936455950e data/idcards/recipes/gray_idcard.json
 895c6f09454fb1fea5ec65e689f9cf3d47490a2b data/idcards/recipes/green_idcard.json
-a9aa5da8bedfb5527c24734eb723b8940df5dcee data/idcards/recipes/idcard_reader.json
+a5a44375aff16f7ee41583838e0476f8bfbd3f4d data/idcards/recipes/idcard_reader.json
 1a2efd3a73f1ae71e465edb07b5d5131aedf228f data/idcards/recipes/light_blue_idcard.json
 bccdf51a7293e65aaee10a32e0fd43897fb58f30 data/idcards/recipes/light_gray_idcard.json
 e0be088c3d96899c59483a84877b75d405baccf7 data/idcards/recipes/lime_idcard.json
@@ -33,7 +32,6 @@ ccc0eae1caee13d761a5da235360e2580cb34c09 data/idcards/recipes/magenta_idcard.jso
 e0ea56e10039db0947ac8f70324fcccc75f4aeda data/idcards/recipes/pink_idcard.json
 d91e789358cd659d804d3c3d980ced814c081fb7 data/idcards/recipes/purple_idcard.json
 4e30bcbc5a64ec951621b2fdce2f7cc1294198d9 data/idcards/recipes/red_idcard.json
-ff4c7ae1a0b1d71196b14b8b2475c0042149665b data/idcards/recipes/scanning_circuit.json
 6a9381fd2ca1516d3c352a39a4f4e1c55ce6d1b1 data/idcards/recipes/white_idcard.json
 520313399a1fbfb05fc8bbb918d1d3ce0c72710c data/idcards/recipes/white_idcard_from_sri.json
 34d28d68d6707e22bf53e6230986400c5d5ca6c6 data/idcards/recipes/yellow_idcard.json

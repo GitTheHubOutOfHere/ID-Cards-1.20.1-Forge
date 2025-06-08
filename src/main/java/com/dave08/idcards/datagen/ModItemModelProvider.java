@@ -35,7 +35,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.IDCARDS.get(DyeColor.WHITE));
         simpleItem(ModItems.IDCARDS.get(DyeColor.YELLOW));
 
-        simpleItem(ModItems.SCANNING_CIRCUIT);
+        //simpleItem(ModItems.SCANNING_CIRCUIT);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

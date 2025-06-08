@@ -2,16 +2,16 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "C": {
-      "item": "idcards:scanning_circuit"
-    },
     "I": {
       "item": "minecraft:iron_ingot"
+    },
+    "R": {
+      "item": "minecraft:redstone"
     }
   },
   "pattern": [
     " I ",
-    "ICI",
+    "IRI",
     " I "
   ],
   "result": {
