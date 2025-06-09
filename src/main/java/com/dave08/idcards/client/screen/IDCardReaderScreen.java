@@ -31,11 +31,10 @@ public class IDCardReaderScreen extends AbstractContainerScreen<IDCardReaderMenu
         int x = (this.width - this.imageWidth) / 2;
         int y = (this.height - this.imageHeight) / 2;
 
-        // Place the text box to the right of the GUI without shifting the rest
-        int boxX = x + this.imageWidth + 10; // 10 px padding to the right
+        /*int boxX = x + this.imageWidth + 10; // 10 px padding to the right
         int boxY = y + 10;
 
-        /*this.pulseLengthBox = new EditBox(this.font, boxX, boxY, 100, 20, Component.literal("Enter text"));
+        this.pulseLengthBox = new EditBox(this.font, boxX, boxY, 100, 20, Component.literal("Enter text"));
         this.pulseLengthBox.setMaxLength(64);
         this.pulseLengthBox.setBordered(false);
         this.pulseLengthBox.setVisible(true);
